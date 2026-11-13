@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -10,17 +10,17 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="style.css" />
-  <title>Grand Prix Manager — Build 0.10.11.0</title>
+  <title>Grand Prix Manager â€” Build 0.10.11.0</title>
 </head>
 <body>
   <div class="bg-grid"></div><div class="bg-track"></div>
   <div class="app-shell">
     <header class="topbar">
       <button class="brand brand-button" id="homeBtn" aria-label="Home"><span class="brand-mark">G</span><span><strong>GRAND PRIX</strong><small>MANAGER</small></span></button>
-      <div class="season" id="seasonBadge"><span class="live-dot"></span> BUILD 0.10.11.0 · WORLD MOTORSPORT SIMULATION</div>
-      <button class="icon-btn" id="installAppBtn" aria-label="Install app" title="Install Grand Prix Manager" hidden>⇩</button>
-      <button class="icon-btn" id="musicToggleBtn" aria-label="Toggle menu music" title="Original house soundtrack">♫ OFF</button>
-      <button class="icon-btn" id="settingsBtn" aria-label="Settings">⚙</button>
+      <div class="season" id="seasonBadge"><span class="live-dot"></span> BUILD 0.10.11.0 Â· WORLD MOTORSPORT SIMULATION</div>
+      <button class="icon-btn" id="installAppBtn" aria-label="Install app" title="Install Grand Prix Manager" hidden>â‡©</button>
+      <button class="icon-btn" id="musicToggleBtn" aria-label="Toggle menu music" title="Original house soundtrack">â™« OFF</button>
+      <button class="icon-btn" id="settingsBtn" aria-label="Settings">âš™</button>
     </header>
     <main>
       <section id="homeView" class="view active gpm-home-redesign">
@@ -29,7 +29,7 @@
             <div class="eyebrow"><span class="live-dot"></span> THE 2026 PADDOCK IS YOURS</div>
             <div class="home-edition">GRAND PRIX<br><em>MANAGER</em></div>
             <p>Build a constructor from the ground up, take over an established team or climb the single-seater ladder to Formula 1.</p>
-            <button class="primary-btn home-start-btn" id="newCareerBtn">ENTER THE PADDOCK <span>↗</span></button>
+            <button class="primary-btn home-start-btn" id="newCareerBtn">ENTER THE PADDOCK <span>â†—</span></button>
             <div class="home-hero-foot"><span>TEAM MANAGEMENT</span><i></i><span>LIVE RACE CONTROL</span><i></i><span>DRIVER CAREER</span></div>
           </div>
           <div class="home-hero-visual" aria-label="Grand Prix racing inspired illustration">
@@ -41,39 +41,39 @@
 
         <section class="home-section-head"><div><div class="eyebrow">CHOOSE YOUR RACE WEEKEND</div><h2>START YOUR <em>STORY.</em></h2></div><span class="home-section-code">01 / CAREER MODES</span></section>
         <section class="mode-grid home-mode-grid">
-          <button class="mode-card panel home-mode-card" data-mode="team"><span class="mode-number">01</span><span class="mode-icon">▰</span><strong>MY TEAM</strong><small>Found a constructor, choose your drivers, build your staff and take on the grid.</small><span class="card-arrow">↗</span><span class="home-mode-tag">BUILD FROM ZERO</span></button>
-          <button class="mode-card panel home-mode-card" data-mode="existing"><span class="mode-number">02</span><span class="mode-icon">◈</span><strong>F1 MANAGER</strong><small>Take control of a real constructor and fight for both world championships.</small><span class="card-arrow">↗</span><span class="home-mode-tag">TAKE THE REINS</span></button>
-          <button class="mode-card panel dc-mode-card home-mode-card" id="driverCareerModeBtn"><span class="mode-number">03</span><span class="mode-icon">🏁</span><strong>DRIVER CAREER</strong><small>Start in F4, progress through F3 and F2, and earn your Formula 1 seat.</small><span class="card-arrow">↗</span><span class="home-mode-tag">RISE TO THE TOP</span></button>
+          <button class="mode-card panel home-mode-card" data-mode="team"><span class="mode-number">01</span><span class="mode-icon">â–°</span><strong>MY TEAM</strong><small>Found a constructor, choose your drivers, build your staff and take on the grid.</small><span class="card-arrow">â†—</span><span class="home-mode-tag">BUILD FROM ZERO</span></button>
+          <button class="mode-card panel home-mode-card" data-mode="existing"><span class="mode-number">02</span><span class="mode-icon">â—ˆ</span><strong>F1 MANAGER</strong><small>Take control of a real constructor and fight for both world championships.</small><span class="card-arrow">â†—</span><span class="home-mode-tag">TAKE THE REINS</span></button>
+          <button class="mode-card panel dc-mode-card home-mode-card" id="driverCareerModeBtn"><span class="mode-number">03</span><span class="mode-icon">ðŸ</span><strong>DRIVER CAREER</strong><small>Start in F4, progress through F3 and F2, and earn your Formula 1 seat.</small><span class="card-arrow">â†—</span><span class="home-mode-tag">RISE TO THE TOP</span></button>
         </section>
 
         <section class="home-dashboard-grid">
-          <div class="home-saves-panel panel"><div class="home-panel-heading"><div><div class="eyebrow">PICK UP WHERE YOU LEFT OFF</div><h2>CAREER <em>FILES.</em></h2></div><span class="home-panel-icon">▤</span></div><div id="saveCount" class="save-note home-save-count">0/5 CAREER SLOTS USED · SELECT LOAD TO RESUME</div><section id="saveList" class="save-list"><div class="empty-state panel">No careers yet. Start your first championship.</div></section></div>
-          <div class="home-driver-panel panel"><div class="home-panel-heading"><div><div class="eyebrow">FROM THE JUNIOR PADDOCK</div><h2>DRIVER <em>PATHWAY.</em></h2></div><span class="home-panel-icon">♜</span></div><p>One seat. Every ladder. Work your way from the feeder series to the Formula 1 grid.</p><div class="home-ladder"><span>F4</span><i></i><span>F3</span><i></i><span>F2</span><i></i><b>F1</b></div><section id="dcSavedList" class="dc-saved-list"><p class="dc-muted">No driver careers yet. Choose Driver Career to begin.</p></section></div>
+          <div class="home-saves-panel panel"><div class="home-panel-heading"><div><div class="eyebrow">PICK UP WHERE YOU LEFT OFF</div><h2>CAREER <em>FILES.</em></h2></div><span class="home-panel-icon">â–¤</span></div><div id="saveCount" class="save-note home-save-count">0/5 CAREER SLOTS USED Â· SELECT LOAD TO RESUME</div><section id="saveList" class="save-list"><div class="empty-state panel">No careers yet. Start your first championship.</div></section></div>
+          <div class="home-driver-panel panel"><div class="home-panel-heading"><div><div class="eyebrow">FROM THE JUNIOR PADDOCK</div><h2>DRIVER <em>PATHWAY.</em></h2></div><span class="home-panel-icon">â™œ</span></div><p>One seat. Every ladder. Work your way from the feeder series to the Formula 1 grid.</p><div class="home-ladder"><span>F4</span><i></i><span>F3</span><i></i><span>F2</span><i></i><b>F1</b></div><section id="dcSavedList" class="dc-saved-list"><p class="dc-muted">No driver careers yet. Choose Driver Career to begin.</p></section></div>
         </section>
         <section class="home-footer-strip"><div><span class="eyebrow">BUILT FOR THE LONG GAME</span><b>EVERY DECISION COUNTS.</b></div><div class="home-feature-pills"><span>HISTORICAL PADDOCK</span><span>TEAM OWNERSHIP</span><span>ENGINEERING & FINANCE</span><span>LIVE RACES</span></div></section>
       </section>
 
       <section id="careerView" class="view">
-        <div class="page-heading"><div><div class="eyebrow">TEAM PRINCIPAL CONTROL CENTRE</div><h1 class="page-title">TEAM <em>HQ.</em></h1></div><button class="secondary-btn" id="backHomeBtn">← HOME</button></div>
-        <section class="hq-banner panel"><div><div class="eyebrow" id="hqSeasonLabel">2026 WORLD CHAMPIONSHIP</div><h2 id="hqTeamName">Your Team</h2><p id="hqTeamMeta">Team Principal · Season 1</p></div><div class="hq-rank"><small>CONSTRUCTORS</small><strong id="hqRank">P11</strong><span id="hqPoints">0 PTS</span></div></section>
-        <section class="stats-grid"><div class="stat-card panel"><small>TEAM BUDGET</small><strong id="budgetValue">€80.0M</strong><span>Available funds</span></div><div class="stat-card panel"><small>CAR PERFORMANCE</small><strong id="carValue">72 / 100</strong><span>Overall rating</span></div><div class="stat-card panel"><small>TEAM REPUTATION</small><strong id="repValue">45</strong><span>Global standing</span></div><div class="stat-card panel"><small>SEASON PROGRESS</small><strong id="roundValue">R0 / 24</strong><span>Race weekends</span></div></section>
+        <div class="page-heading"><div><div class="eyebrow">TEAM PRINCIPAL CONTROL CENTRE</div><h1 class="page-title">TEAM <em>HQ.</em></h1></div><button class="secondary-btn" id="backHomeBtn">â† HOME</button></div>
+        <section class="hq-banner panel"><div><div class="eyebrow" id="hqSeasonLabel">2026 WORLD CHAMPIONSHIP</div><h2 id="hqTeamName">Your Team</h2><p id="hqTeamMeta">Team Principal Â· Season 1</p></div><div class="hq-rank"><small>CONSTRUCTORS</small><strong id="hqRank">P11</strong><span id="hqPoints">0 PTS</span></div></section>
+        <section class="stats-grid"><div class="stat-card panel"><small>TEAM BUDGET</small><strong id="budgetValue">â‚¬80.0M</strong><span>Available funds</span></div><div class="stat-card panel"><small>CAR PERFORMANCE</small><strong id="carValue">72 / 100</strong><span>Overall rating</span></div><div class="stat-card panel"><small>TEAM REPUTATION</small><strong id="repValue">45</strong><span>Global standing</span></div><div class="stat-card panel"><small>SEASON PROGRESS</small><strong id="roundValue">R0 / 24</strong><span>Race weekends</span></div></section>
         <section class="section-heading"><div><div class="eyebrow">THE PEOPLE IN THE COCKPIT</div><h2>DRIVER LINE-UP</h2></div><span class="section-index" id="driverSeasonTag">2026</span></section>
         <section id="driverCards" class="driver-grid"></section>
-        <section class="section-heading"><div><div class="eyebrow">YOUR SIGNED JUNIOR DRIVERS</div><h2>ACADEMY & RESERVES</h2></div><span class="section-index">F1 · F2 · F3 · F4</span></section>
+        <section class="section-heading"><div><div class="eyebrow">YOUR SIGNED JUNIOR DRIVERS</div><h2>ACADEMY & RESERVES</h2></div><span class="section-index">F1 Â· F2 Â· F3 Â· F4</span></section>
         <section class="transfer-panel panel"><div><b>YOUR ACADEMY ROSTER</b><p>Track the development and feeder-series progress of your signed reserve drivers. Use the Driver Market in the management menu to recruit.</p></div><div id="reserveList" class="reserve-list"></div></section>
         
         <section class="section-heading"><div><div class="eyebrow">NEXT ON THE CALENDAR</div><h2>RACE WEEKEND</h2></div></section>
-        <section class="race-panel panel"><div><div class="eyebrow">ROUND <span id="nextRound">1</span></div><h2 id="nextRace">BAHRAIN GRAND PRIX</h2><p>Prepare your team, then choose a lap-by-lap live race or an instant simulated race. Both use your team and car performance.</p></div><button id="raceBtn" class="primary-btn">NEXT RACE · CHOOSE MODE →</button></section>
+        <section class="race-panel panel"><div><div class="eyebrow">ROUND <span id="nextRound">1</span></div><h2 id="nextRace">BAHRAIN GRAND PRIX</h2><p>Prepare your team, then choose a lap-by-lap live race or an instant simulated race. Both use your team and car performance.</p></div><button id="raceBtn" class="primary-btn">NEXT RACE Â· CHOOSE MODE â†’</button></section>
         <section class="section-heading"><div><div class="eyebrow">TEAM PRINCIPAL OPERATIONS</div><h2>MANAGEMENT CENTRE</h2></div><span class="section-index">PADDOCK CONTROL</span></section>
         <section class="management-deck panel" id="managementDeck">
-          <button class="management-tile" data-manage="market"><span>01</span><b>DRIVER MARKET</b><small>Recruit, negotiate and manage contracts</small><i>↗</i></button>
-          <button class="management-tile" data-manage="development"><span>02</span><b>TECHNICAL DEPARTMENT</b><small>Develop your own power unit and car systems</small><i>↗</i></button>
-          <button class="management-tile" data-manage="sponsors"><span>03</span><b>COMMERCIAL PARTNERS</b><small>Sign sponsors and earn race-weekend payments</small><i>↗</i></button>
-          <button class="management-tile" data-manage="staff"><span>04</span><b>TEAM PERSONNEL</b><small>Engineers, strategists and pit crew</small><i>↗</i></button>
-          <button class="management-tile" data-manage="standings"><span>05</span><b>CHAMPIONSHIP</b><small>Driver and constructor standings</small><i>↗</i></button>
-          <button class="management-tile" data-manage="history"><span>06</span><b>SEASON ARCHIVE</b><small>Race results and team history</small><i>↗</i></button>
+          <button class="management-tile" data-manage="market"><span>01</span><b>DRIVER MARKET</b><small>Recruit, negotiate and manage contracts</small><i>â†—</i></button>
+          <button class="management-tile" data-manage="development"><span>02</span><b>TECHNICAL DEPARTMENT</b><small>Develop your own power unit and car systems</small><i>â†—</i></button>
+          <button class="management-tile" data-manage="sponsors"><span>03</span><b>COMMERCIAL PARTNERS</b><small>Sign sponsors and earn race-weekend payments</small><i>â†—</i></button>
+          <button class="management-tile" data-manage="staff"><span>04</span><b>TEAM PERSONNEL</b><small>Engineers, strategists and pit crew</small><i>â†—</i></button>
+          <button class="management-tile" data-manage="standings"><span>05</span><b>CHAMPIONSHIP</b><small>Driver and constructor standings</small><i>â†—</i></button>
+          <button class="management-tile" data-manage="history"><span>06</span><b>SEASON ARCHIVE</b><small>Race results and team history</small><i>â†—</i></button>
         </section>
-        <section class="section-heading"><div><div class="eyebrow">ENGINEERING STATUS</div><h2>POWER UNIT & SYSTEMS</h2></div><button id="openEngineWorkshop" class="small-action">OPEN WORKSHOP ↗</button></section>
+        <section class="section-heading"><div><div class="eyebrow">ENGINEERING STATUS</div><h2>POWER UNIT & SYSTEMS</h2></div><button id="openEngineWorkshop" class="small-action">OPEN WORKSHOP â†—</button></section>
         <div id="attributeList" class="attribute-list"></div>
         <section class="section-heading"><div><div class="eyebrow">CAREER MANAGEMENT</div><h2>YOUR SAVE</h2></div></section>
         <section class="save-actions panel"><span id="saveStatus">Career saves automatically on this device.</span><button id="deleteCareerBtn" class="danger-btn">DELETE CAREER</button></section>
@@ -81,10 +81,10 @@
 
       <section id="garageView" class="view" hidden aria-hidden="true"><span id="garageCarName">Technical department</span><button id="garageBack" type="button" hidden>Back</button></section>
 
-      <section id="inboxView" class="view"><div class="page-heading"><div><div class="eyebrow">TEAM COMMUNICATIONS</div><h1 class="page-title">TEAM <em>INBOX.</em></h1></div><button class="secondary-btn" id="inboxBack">← HQ</button></div><div id="inboxContent" class="inbox-content panel"><div class="empty-state">Your team communications will appear here after you create a career.</div></div></section>
+      <section id="inboxView" class="view"><div class="page-heading"><div><div class="eyebrow">TEAM COMMUNICATIONS</div><h1 class="page-title">TEAM <em>INBOX.</em></h1></div><button class="secondary-btn" id="inboxBack">â† HQ</button></div><div id="inboxContent" class="inbox-content panel"><div class="empty-state">Your team communications will appear here after you create a career.</div></div></section>
     
       <section id="driverCareerView" class="view dc-view">
-        <div class="page-heading"><div><div class="eyebrow">FROM THE JUNIOR PADDOCK TO THE WORLD STAGE</div><h1 class="page-title">DRIVER <em>CAREER.</em></h1></div><button class="secondary-btn" id="dcHomeBtn">← HOME</button></div>
+        <div class="page-heading"><div><div class="eyebrow">FROM THE JUNIOR PADDOCK TO THE WORLD STAGE</div><h1 class="page-title">DRIVER <em>CAREER.</em></h1></div><button class="secondary-btn" id="dcHomeBtn">â† HOME</button></div>
         <section id="dcSetup" class="panel dc-setup">
           <div class="dc-kicker">CREATE YOUR RACING IDENTITY</div><h2>Your road to Formula 1 starts here.</h2>
           <p>Choose a team and apply for a seat. Teams can accept or reject you. Build experience over multiple seasons before earning a promotion.</p>
@@ -93,14 +93,14 @@
             <label>NATIONALITY<input id="dcNationality" maxlength="24" placeholder="e.g. North Macedonian" value="North Macedonian"></label>
             <label>RACING NUMBER<input id="dcNumber" type="number" min="2" max="99" value="27"></label>
             <label>STARTING AGE<input id="dcAge" type="number" min="15" max="25" value="17"></label>
-            <label>STARTING SERIES<select id="dcSeries"><option value="F4">Formula 4 · Rookie pathway</option><option value="F3">Formula 3 · International step</option><option value="F2">Formula 2 · One step from F1</option></select></label><label>CHOOSE YOUR TEAM<select id="dcTeam"></select></label>
+            <label>STARTING SERIES<select id="dcSeries"><option value="F4">Formula 4 Â· Rookie pathway</option><option value="F3">Formula 3 Â· International step</option><option value="F2">Formula 2 Â· One step from F1</option></select></label><label>CHOOSE YOUR TEAM<select id="dcTeam"></select></label>
           </div>
-          <button class="primary-btn" id="dcCreateBtn">SIGN FIRST DRIVER CONTRACT ↗</button>
+          <button class="primary-btn" id="dcCreateBtn">SIGN FIRST DRIVER CONTRACT â†—</button>
           <p class="dc-muted">Expect at least 3 F4 seasons, 3 F3 seasons and 2 F2 seasons before F1 eligibility. Your career is separate from Team Principal saves.</p>
         </section>
         <section id="dcDashboard" class="dc-dashboard" hidden>
           <section class="dc-driver-hero panel">
-            <div><div class="dc-kicker" id="dcSeriesLabel">F4 · SEASON 1</div><h2 id="dcDriverName">Driver Name</h2><p id="dcTeamName">Team</p><span class="dc-age" id="dcAgeLabel">AGE 17</span></div>
+            <div><div class="dc-kicker" id="dcSeriesLabel">F4 Â· SEASON 1</div><h2 id="dcDriverName">Driver Name</h2><p id="dcTeamName">Team</p><span class="dc-age" id="dcAgeLabel">AGE 17</span></div>
             <div class="dc-rating-block"><small>OVERALL</small><strong id="dcRating">50</strong><span>POTENTIAL <b id="dcPotential">85</b></span></div>
           </section>
           <section class="dc-stat-grid">
@@ -112,9 +112,9 @@
           <section class="panel dc-progress-panel"><div class="dc-progress-head"><b>SEASON PROGRESS</b><span id="dcStage">PRACTICE</span></div><div class="dc-progress-track"><i id="dcProgress"></i></div><div class="dc-ladder"><span data-dc-ladder="F4">F4</span><i></i><span data-dc-ladder="F3">F3</span><i></i><span data-dc-ladder="F2">F2</span><i></i><span data-dc-ladder="F1">F1</span></div></section>
           <section class="dc-two-col">
             <div class="panel dc-weekend">
-              <div class="dc-kicker">RACE WEEKEND</div><h2 id="dcWeekendTitle">Bahrain · Practice</h2><p id="dcWeekendText">Prepare for the weekend.</p>
+              <div class="dc-kicker">RACE WEEKEND</div><h2 id="dcWeekendTitle">Bahrain Â· Practice</h2><p id="dcWeekendText">Prepare for the weekend.</p>
               <label class="dc-focus-label">PRACTICE FOCUS<select id="dcPracticeFocus"><option value="pace">Race pace</option><option value="qualifying">Qualifying speed</option><option value="racecraft">Racecraft</option><option value="tyres">Tyre management</option><option value="wet">Wet weather</option></select></label>
-              <button class="primary-btn" id="dcWeekendButton">COMPLETE PRACTICE →</button>
+              <button class="primary-btn" id="dcWeekendButton">COMPLETE PRACTICE â†’</button>
               <div class="dc-training"><div><b>DRIVER DEVELOPMENT</b><small><span id="dcTrainingPoints">0</span> development points available</small></div><select id="dcTrainingSkill"><option value="pace">Pace</option><option value="qualifying">Qualifying</option><option value="racecraft">Racecraft</option><option value="consistency">Consistency</option><option value="tyres">Tyre management</option><option value="wet">Wet weather</option></select><button id="dcTrainingButton" class="small-action">TRAIN +1</button></div>
             </div>
             <div class="panel dc-attributes"><div class="dc-kicker">DRIVER ATTRIBUTES</div><h2>Performance profile</h2><div id="dcAttributes"></div></div>
@@ -126,13 +126,13 @@
           <div class="dc-dashboard-actions"><button class="secondary-btn" id="dcNewCareerBtn">NEW DRIVER CAREER</button><button class="secondary-btn" id="dcHomeBtn2">SAVE & HOME</button></div>
         </section>
       </section>
-      <div id="dcReport" class="modal-backdrop" hidden><div class="modal panel dc-report-modal"><button class="close-btn" id="dcReportClose">×</button><div id="dcReportBody"></div></div></div>
+      <div id="dcReport" class="modal-backdrop" hidden><div class="modal panel dc-report-modal"><button class="close-btn" id="dcReportClose">Ã—</button><div id="dcReportBody"></div></div></div>
 </main>
-    <nav class="bottom-nav"><button class="nav-item active" data-nav="home"><span>⌂</span>HOME</button><button class="nav-item" data-nav="career"><span>▤</span>CAREER</button><button class="nav-item" data-nav="inbox"><span>✉</span>INBOX</button></nav>
+    <nav class="bottom-nav"><button class="nav-item active" data-nav="home"><span>âŒ‚</span>HOME</button><button class="nav-item" data-nav="career"><span>â–¤</span>CAREER</button><button class="nav-item" data-nav="inbox"><span>âœ‰</span>INBOX</button></nav>
   </div>
 
-  <div class="modal-backdrop" id="modal" hidden><div class="modal panel"><button class="close-btn" id="closeModal">×</button><div class="eyebrow">NEW CAREER SETUP</div><h2 id="modalTitle">CHOOSE YOUR PATH</h2><div id="modalText" class="modal-description">Your next chapter starts now.</div><label for="seasonSelect">SEASON</label><select id="seasonSelect"></select><label id="teamNameLabel" for="teamName">TEAM NAME</label><input id="teamName" type="text" maxlength="24" placeholder="e.g. Apex Grand Prix" autocomplete="off" autocapitalize="words" spellcheck="false" aria-label="Team name" /><label for="teamSelect" id="teamSelectLabel" hidden>CONSTRUCTOR</label><select id="teamSelect" hidden></select><label for="teamColor">TEAM COLOUR</label><input id="teamColor" type="color" value="#e52b3d" /><label for="engineSupplier" id="engineSupplierLabel">ENGINE SUPPLIER</label><select id="engineSupplier"><option>Mercedes-AMG</option><option>Ferrari</option><option>Honda RBPT</option><option>Audi</option><option>Renault</option><option>Cosworth</option><option>Own Works</option></select><label for="gearboxSupplier" id="gearboxSupplierLabel">GEARBOX SUPPLIER</label><select id="gearboxSupplier"><option>Mercedes</option><option>Ferrari</option><option>Red Bull Technology</option><option>McLaren Applied</option><option>Audi</option><option>In-house</option></select><label for="driverOne" id="driverOneLabel" hidden>DRIVER 1</label><select id="driverOne" hidden></select><label for="driverTwo" id="driverTwoLabel" hidden>DRIVER 2</label><select id="driverTwo" hidden></select><button class="primary-btn" id="createBtn" type="button">CREATE CAREER <span>↗</span></button><p class="save-note">Career data is saved automatically on this device.</p></div></div>
-  <div class="modal-backdrop" id="transferModal" hidden><div class="modal panel"><button class="close-btn" id="closeTransferModal">×</button><div class="eyebrow">DRIVER CONTRACTS</div><h2>DRIVER MARKET</h2><p id="transferIntro">Select a driver and the seat they will take. Academy and reserve drivers remain active in their F2/F3/F4 championships.</p><label for="transferDriver">AVAILABLE DRIVER / PROSPECT</label><select id="transferDriver"></select><label for="transferSeat">SEAT TO FILL</label><select id="transferSeat"><option value="0">CAR 1 · LEAD DRIVER</option><option value="1">CAR 2 · SECOND DRIVER</option><option value="2">RESERVE PROGRAMME · SIGN JUNIOR</option></select><div class="market-detail" id="marketDetail"></div><button class="primary-btn" id="confirmTransferBtn">CONFIRM TRANSFER ↗</button><p class="save-note">Transfers update the team roster immediately and autosave.</p></div></div>
+  <div class="modal-backdrop" id="modal" hidden><div class="modal panel"><button class="close-btn" id="closeModal">Ã—</button><div class="eyebrow">NEW CAREER SETUP</div><h2 id="modalTitle">CHOOSE YOUR PATH</h2><div id="modalText" class="modal-description">Your next chapter starts now.</div><label for="seasonSelect">SEASON</label><select id="seasonSelect"></select><label id="teamNameLabel" for="teamName">TEAM NAME</label><input id="teamName" type="text" maxlength="24" placeholder="e.g. Apex Grand Prix" autocomplete="off" autocapitalize="words" spellcheck="false" aria-label="Team name" /><label for="teamSelect" id="teamSelectLabel" hidden>CONSTRUCTOR</label><select id="teamSelect" hidden></select><label for="teamColor">TEAM COLOUR</label><input id="teamColor" type="color" value="#e52b3d" /><label for="engineSupplier" id="engineSupplierLabel">ENGINE SUPPLIER</label><select id="engineSupplier"><option>Mercedes-AMG</option><option>Ferrari</option><option>Honda RBPT</option><option>Audi</option><option>Renault</option><option>Cosworth</option><option>Own Works</option></select><label for="gearboxSupplier" id="gearboxSupplierLabel">GEARBOX SUPPLIER</label><select id="gearboxSupplier"><option>Mercedes</option><option>Ferrari</option><option>Red Bull Technology</option><option>McLaren Applied</option><option>Audi</option><option>In-house</option></select><label for="driverOne" id="driverOneLabel" hidden>DRIVER 1</label><select id="driverOne" hidden></select><label for="driverTwo" id="driverTwoLabel" hidden>DRIVER 2</label><select id="driverTwo" hidden></select><button class="primary-btn" id="createBtn" type="button">CREATE CAREER <span>â†—</span></button><p class="save-note">Career data is saved automatically on this device.</p></div></div>
+  <div class="modal-backdrop" id="transferModal" hidden><div class="modal panel"><button class="close-btn" id="closeTransferModal">Ã—</button><div class="eyebrow">DRIVER CONTRACTS</div><h2>DRIVER MARKET</h2><p id="transferIntro">Select a driver and the seat they will take. Academy and reserve drivers remain active in their F2/F3/F4 championships.</p><label for="transferDriver">AVAILABLE DRIVER / PROSPECT</label><select id="transferDriver"></select><label for="transferSeat">SEAT TO FILL</label><select id="transferSeat"><option value="0">CAR 1 Â· LEAD DRIVER</option><option value="1">CAR 2 Â· SECOND DRIVER</option><option value="2">RESERVE PROGRAMME Â· SIGN JUNIOR</option></select><div class="market-detail" id="marketDetail"></div><button class="primary-btn" id="confirmTransferBtn">CONFIRM TRANSFER â†—</button><p class="save-note">Transfers update the team roster immediately and autosave.</p></div></div>
   <div id="gpmLegacyActions" hidden aria-hidden="true"><button id="openTransferBtn" type="button"></button><button id="gpmOpenContracts" type="button"></button><button id="upgradeBtn" type="button"></button><button id="staffBtn" type="button"></button><button id="sponsorBtn" type="button"></button><button id="standingsBtn" type="button"></button><button id="archiveBtn" type="button"></button></div>
   <audio id="menuSoundtrack" src="./audio/menu-house-loop.wav" loop preload="auto"></audio>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -171,5 +171,14 @@
     });
   })();
   </script>
+  <script>
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js', { scope: './' })
+        .catch(error => console.warn('GPM offline support:', error));
+    });
+  }
+  </script>
 </body>
 </html>
+
