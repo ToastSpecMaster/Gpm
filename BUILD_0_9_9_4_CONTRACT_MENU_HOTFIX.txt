@@ -1,0 +1,12 @@
+GRAND PRIX MANAGER 0.9.9.4 - CONTRACT MENU HOTFIX
+
+- Fixed the TEAM CONTRACTS screen failing on open because ensureAllTeamContracts064 was referenced but never defined.
+- Added a contract-roster builder for race engineers, starting engineers, strategist and pit crew.
+- Staff contract records are initialized safely with season, expiry, salary, bonus and status defaults.
+- Existing driver, academy and staff records remain attached to the current career save.
+- Contract extension editor and existing renewal validation remain intact.
+- Added QA coverage for the missing helper and all staff contract categories.
+
+The patch does not overwrite career lineups or championship results. Existing Zdravkovski Racing drivers and season standings remain save-controlled.
+
+Package version remains 0.9.9 for Electron Builder compatibility; the game release label is 0.9.9.4.

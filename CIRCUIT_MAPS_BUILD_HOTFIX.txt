@@ -1,0 +1,23 @@
+GRAND PRIX MANAGER 0.9.8 - CIRCUIT MAP DOWNLOAD HOTFIX
+
+This hotfix fixes the circuit-map downloader. The old downloader used an invalid raw GitHub URL and assumed an asset folder path that was not checked against the upstream repository.
+
+WHAT CHANGED
+- Looks up the upstream repository's recursive Git tree first.
+- Finds each requested layout by its exact SVG filename and prefers the minimal white-outline style when available.
+- Downloads from raw GitHub, with jsDelivr as a mirror.
+- Retries temporary failures, but does not waste retries on HTTP 404.
+- Validates all SVGs, including cached files, before reporting success.
+- The Windows packaging pre-step stops if any required map is absent or invalid.
+
+BUILD
+1. Extract the project ZIP.
+2. Open a terminal in the grand_prix_manager folder.
+3. Run: npm install
+4. Run: npm run download:circuits
+5. Run: npm run dist
+
+After a successful build, circuit maps are bundled into the Windows installer and work offline. An internet connection is required only during the asset-download/build step unless all map assets are already present locally.
+
+SOURCE AND LICENSE
+Circuit layout assets are sourced from julesr0y/f1-circuits-svg, licensed CC BY 4.0. See CIRCUIT_MAPS_ATTRIBUTION.txt.

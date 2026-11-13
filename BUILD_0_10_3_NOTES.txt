@@ -1,0 +1,19 @@
+GRAND PRIX MANAGER 0.10.3 — PERMANENT CAREER ARCHIVE & HALL OF FAME FIX
+
+Implemented in this update:
+- Every completed season is archived automatically when its final race is simulated; the player no longer has to open the season-finale screen or advance to the next season to preserve that year.
+- Each career season archive record stores the drivers' and constructors' final standings, points, race count, winners, podium counts and pole counts where the starting-grid data is available.
+- Per-season idempotency prevents the same championship from being counted twice when the Hall of Fame is reopened or a save is loaded.
+- Career Hall of Fame now reads the permanent season archive and displays the total number of completed seasons.
+- Historical reference data no longer labels 2026 as completed or awards a 2026 title in advance. The current season remains a career result until the player completes it.
+- Existing race-level win and podium counts are not added a second time during season archiving.
+- Open-ended career progression beyond the supplied modern season templates remains supported by the existing season-transition system.
+- Fixed the Windows installer manifest so broadcast-ui.js is packaged with the Electron app.
+
+IMPORTANT LIMITATIONS:
+- This update does NOT yet add complete playable historical grids for every season from 1950 through 2026. The current playable starting grids remain 2022–2026.
+- It does NOT yet integrate the full F1DB historical entrant/constructor dataset. F1DB provides historical drivers, constructors, engines, circuits and season records under CC BY 4.0; full integration remains a separate major milestone.
+- It does NOT add a complete 2027 entry list or invent 2026 final championship results.
+- Electron GUI launch and Windows NSIS installer build have not been performed in this environment.
+
+QA: Existing project QA suites plus qa_0103.js must pass.

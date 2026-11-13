@@ -1,0 +1,20 @@
+GRAND PRIX MANAGER 0.9.7 — DRIVER MARKET / CONTRACT REBUILD QA
+
+PASSED
+- app.js, gpm-064.js, driver-career.js, main.cjs and preload.cjs pass Node syntax checks.
+- package.json parses and remains version 0.9.7.
+- Driver Market has F1, F2, F3 and Historic F1 tabs.
+- Driver Market includes search, availability filters, sorting and driver profile detail.
+- Team Contracts page is accessible from the team line-up panel and Driver Market.
+- Team Contracts includes both F1 seats, reserves/academy, two race engineers,
+  two starting engineers, strategist and pit crew when assigned.
+- Existing saves receive missing staff contract records lazily without replacing staff.
+- Renewal and release actions update contract status, career history/inbox and save.
+- Existing cloud-save IPC, Hall of Fame, sponsor and staff systems remain in package.
+- ZIP integrity verified.
+
+NOT VERIFIED HERE
+- Full interactive Windows Electron playthrough.
+- User's live career save migration and all market interactions in a running app.
+- Windows installer build.
+- AI team contract negotiation balance over multiple seasons.

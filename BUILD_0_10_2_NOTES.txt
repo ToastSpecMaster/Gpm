@@ -1,0 +1,17 @@
+GRAND PRIX MANAGER 0.10.2 — AGE ELIGIBILITY & BROADCAST PRESENTATION
+
+Implemented in this update:
+- Season-based driver age eligibility gate. Drivers with known birth dates who are older than 50 on 1 July of the selected season are filtered from the shared driver market availability function and blocked from new-team driver selection/creation.
+- Animated pre-race grid-walk presentation using the qualifying grid order, team colours, car numbers and driver names.
+- Driver portraits are requested from Wikimedia Commons and only displayed when the returned image metadata declares CC0, CC BY, CC BY-SA or Public Domain. Initials remain as a fallback. Image licence labels are displayed on the portrait where provided.
+- Animated podium presentation for the top three classified drivers after the race result screen.
+
+Known limitations — not represented as complete:
+- This source project still contains season grids only for 2022–2026. The complete 1950–2026 historical driver and constructor archive has NOT been integrated.
+- 2027 is not a completed historical season; no full 2027 grid is supplied in this build.
+- Age data is explicit and limited to the names in broadcast-ui.js. Unknown birth dates are not guessed and therefore are not age-filtered until historical driver records are integrated.
+- National anthem recordings are NOT included. They require a properly licensed recording library and country/winner mapping. No unlicensed broadcast audio is bundled.
+- The race is simulated before the pre-race grid presentation is shown; the grid screen is a broadcast-style presentation of the already determined qualifying order, not a live simulation sequence.
+- Wikimedia Commons image search requires an internet connection. A portrait may fall back to initials if no suitably licensed file is returned.
+
+This is an incremental pre-release update, not the full historical-data release or Steam-ready build.

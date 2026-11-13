@@ -1,0 +1,16 @@
+GRAND PRIX MANAGER 0.10.4 — SEASON-AWARE DRIVER PORTRAITS
+
+Implemented in this source update:
+- Added one shared Wikimedia Commons portrait service for the Driver Market and broadcast presentation.
+- Portrait searches include the active career season, so a 2022 career requests a 2022 photo and a 2026 career requests a 2026 photo where one is available.
+- If no reusable season-specific image is found, the resolver tries a general reusable Commons image.
+- Strictly rejects NonCommercial and NoDerivatives licences. Accepts CC0, CC BY, CC BY-SA, Public Domain and OGL 3 licences.
+- Keeps photographer, licence, licence URL, Commons file page and date metadata with the selected image.
+- Adds initials fallback when Commons is unavailable or no suitable photo is found.
+- Broadcast grid and podium now use the same season-aware portrait service as the Driver Market.
+
+Important limitations:
+- Photos are retrieved from Wikimedia Commons at runtime; this update does not bundle a complete offline image archive.
+- The user-supplied Max Verstappen and Sergio Perez sports-site links and Carlos Sainz Getty link were not bundled because their redistribution rights were not established. The supplied Charles Leclerc Wikimedia link still needs its exact file-page licence/attribution checked before being packaged. Open-licence alternatives are preferred.
+- The resolver does not claim every driver will have a season-specific image; it falls back to another reusable Commons image or initials.
+- Automated source QA was run. No claim of a full visual Electron launch test is made.

@@ -1,0 +1,14 @@
+GRAND PRIX MANAGER 0.9.9.7 — AI DEVELOPMENT & GRID PROGRESSION HOTFIX
+
+FIXES
+- AI constructor car ratings now develop after every completed race round and are saved with per-team season/round history.
+- Development is bounded and includes a catch-up effect for weaker teams to reduce runaway dominance.
+- AI car ratings carry across season transitions instead of resetting to starting-season values.
+- AI driver line-ups now change during the off-season; transfers are recorded and duplicate seats are prevented.
+- Long-serving drivers can retire, with replacement drivers promoted from the available junior pool.
+- A pre-season report now lists transfers, retirements, and every team's new line-up.
+- The player's signed driver line-up is preserved when advancing seasons, regardless of whether the career began with an existing constructor or a custom team.
+
+QA
+- Added qa_0997.js regression checks for the new progression and lineup logic.
+- Full automated QA and JavaScript syntax checks are required before packaging.

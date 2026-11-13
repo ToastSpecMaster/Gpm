@@ -1,0 +1,20 @@
+GRAND PRIX MANAGER 0.9.9.1 — WINDOWS HOTFIX
+
+FIXES
+- Reworked the New Career dialog's dynamic content container from a paragraph to a block container. The previous paragraph was also being used to inject a multi-button path chooser, which is invalid markup and could interfere with interaction/focus in the Windows renderer.
+- Made the My Team name field an explicit text input with stable focus, text selection and pointer interaction.
+- Reworked the career creation flow to validate the team name and two distinct drivers, persist the save before switching screens, and show a clear storage error instead of silently failing.
+- Set the create action to an explicit button type so it cannot accidentally submit a surrounding form.
+
+FRONT PAGE
+- Rebuilt the home screen with a new paddock-style hero, career mode cards, saved-career panel, driver pathway panel and feature strip.
+- Preserved the existing career-mode controls and saved-career list element IDs so existing game logic remains connected.
+
+PRESERVATION
+- Existing gameplay, seasons, staff, sponsors, driver market, circuits, race modes, 3D models and save data formats are retained.
+- No existing career save is deleted or migrated by this hotfix.
+
+QA
+- Circuit-map QA
+- Pre-1.0 gameplay QA
+- Team Creator and home-screen regression checks

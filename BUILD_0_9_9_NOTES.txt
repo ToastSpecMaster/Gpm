@@ -1,0 +1,20 @@
+GRAND PRIX MANAGER 0.9.9 — AUTOMATIC LIVE RACE + CLOUD SAVE IMPROVEMENTS
+
+LIVE RACE
+- Live races advance automatically every 1.1 seconds; no repeated NEXT LAP clicking.
+- Pause/resume is available; fast-forward and close/save remain available.
+- Closing a race saves its current lap. Reopening the race resumes the saved state and starts automatic progression.
+- Running-order movement is deterministic and smooth; per-lap random position jitter has been removed.
+- Gain/loss is measured against the actual starting grid position throughout the race.
+- Official points and championship records are applied once, when the chequered flag is reached.
+- Actual season circuit-map URL and layout metadata remain attached to the live event.
+
+CLOUD SAVES
+- Existing automatic cloud-folder sync remains in place for the installed Windows desktop app.
+- If a cloud folder is configured, career changes (including live-race lap saves) sync automatically.
+- On a fresh/empty installation, an existing cloud save is restored automatically.
+- Existing local careers are never overwritten by automatic startup restore.
+- The cloud folder must be a OneDrive/Dropbox/other locally synced folder; this is folder-based sync, not a hosted game account.
+
+PLATFORM NOTE
+- This is a Windows/Electron source project. It is not an IPA. iOS packaging/signing requires a macOS/Xcode cloud build and Apple signing credentials.

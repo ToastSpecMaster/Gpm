@@ -1,0 +1,25 @@
+GRAND PRIX MANAGER 0.9.6 — QA REPORT
+
+PASSED IN THIS BUILD ENVIRONMENT
+- Node syntax checks: app.js, gpm-064.js, driver-career.js, main.cjs,
+  preload.cjs, save-migration.js, livery-maker.js and car-viewer.js.
+- package.json parses and reports version 0.9.6.
+- Regression test confirms Hall of Fame reads sorted standings objects by .name.
+- Season advancement rejects a failed core transition and restores the full career
+  snapshot; double-click guard is reset in finally.
+- Cloud IPC is exposed through a context-isolated preload bridge.
+- Cloud writes are serialized and use a temporary file followed by rename.
+- Cloud data includes Team Principal and Driver Career saves.
+- Existing cloud files are detected before first connection; user chooses restore
+  or upload, avoiding silent overwrite of an existing cloud backup.
+- Delete operations sync updated save lists.
+
+NOT VERIFIED IN THIS ENVIRONMENT
+- Full interactive Electron playthrough using a live career save.
+- Installer compilation on Windows.
+- Actual OneDrive/Dropbox/iCloud synchronization across two physical devices.
+
+CLOUD MODEL
+- Select a folder synchronized by OneDrive, Dropbox, iCloud Drive or another
+  desktop sync provider. The game writes grand-prix-manager-cloud-save.json there.
+- This is provider-folder cloud sync, not a hosted Grand Prix Manager account/server.

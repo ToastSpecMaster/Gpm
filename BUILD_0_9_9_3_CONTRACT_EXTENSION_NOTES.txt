@@ -1,0 +1,11 @@
+GRAND PRIX MANAGER 0.9.9.3 - CONTRACT EXTENSION REVAMP
+
+- Replaced native prompt-based renewals with an in-game contract extension editor.
+- Added editable annual salary, additional seasons and renewal bonus.
+- Extensions now add time to the existing expiry date rather than resetting the contract from the current season.
+- Original contract start dates are preserved.
+- Added validation, available-budget checks for renewal bonuses, a live expiry preview and clear error messages.
+- Successful extensions update the contract record, inbox, career save and contract list.
+- Added responsive styling and dedicated contract-extension QA checks.
+
+Package version remains 0.9.9 for Electron Builder compatibility; the game release label is 0.9.9.3.

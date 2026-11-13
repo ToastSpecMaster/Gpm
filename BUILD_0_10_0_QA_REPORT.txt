@@ -1,0 +1,22 @@
+GRAND PRIX MANAGER 0.10.0 — SOURCE QA REPORT
+
+SOURCE BASE
+- User-supplied Grand_Prix_Manager_0.9.12_COMPLETE_UPDATE.zip.
+
+PASSED
+- JavaScript syntax checks: app.js, main.cjs, gpm-064.js, driver-career.js, pre10-overhaul.js, steam-overhaul.js, qa_0100.js.
+- Existing project regression suites: circuit maps, pre-1.0 systems, team creator, supplier management, contract extensions, development and staff systems, AI progression / offseason grid persistence.
+- 0.10.0 source QA: visible garage navigation removed; 3D viewer/livery scripts and model assets removed from source and package manifest; management hub exists; local WAV soundtrack exists and has a valid RIFF/WAVE header; works-engine module paths exist; sponsor race-payment logic and licensed portrait lookup exist.
+- Soundtrack asset: 31.48-second stereo WAV, 44.1 kHz, loop-safe fade at both ends.
+- Package version: 0.10.0 (valid SemVer).
+- Source ZIP integrity is checked after packaging.
+
+NOT VERIFIED
+- Electron desktop GUI was not launched in this environment.
+- Actual Windows NSIS installer was not built; the environment has no installed node_modules and cannot resolve package downloads.
+- Driver portrait availability is dependent on Wikimedia Commons connectivity and a suitable reusable licence; missing portraits fall back to initials.
+- The historical data requirement is NOT complete: the current game grid still focuses on 2022–2026 and its historical market is a limited curated set. It does not yet include every driver and constructor from 1950 onward or a complete season-by-season team lineage model.
+- Steamworks integration, store assets, third-party rights review, controller support and release certification are not complete.
+
+RESULT
+Automated source and regression QA passed. This is an early 0.10.0 management-overhaul build, not a finished Steam release and not yet the complete 1950–2026 historical database requested.

@@ -1,0 +1,11 @@
+GRAND PRIX MANAGER 0.10.1 — MOTION & PRESENTATION UPDATE
+
+- Animated motorsport hero presentation with subtle moving highlight, atmospheric background and track-scene motion.
+- Smooth transitions when changing game views and opening modal windows.
+- Staggered reveal animations for management tiles, cards, standings and dynamically rendered panels.
+- Responsive hover, focus and press feedback for buttons and navigation.
+- Animated progress meters and driver portrait appearance.
+- Respects the operating system's reduced-motion accessibility preference; motion is disabled/reduced when requested.
+- Motion is presentation-only and does not alter simulation outcomes, race timing, or saved career data.
+
+QA: npm run qa includes qa_0101.js. Automated source QA does not replace visual testing in the Electron app. Steamworks, full historical driver/team coverage, and final commercial release preparation remain separate milestones.

@@ -1,0 +1,50 @@
+GRAND PRIX MANAGER 0.9.7 — HALL OF FAME & STAFF EXPANSION
+
+GLOBAL FORMULA 1 HALL OF FAME
+- Added all 77 Formula 1 World Drivers' Championship seasons from 1950 to 2026,
+  covering 36 different World Champions.
+- Added a grouped driver legend showing each champion's total titles and every
+  title-winning season.
+- Added the year-by-year Drivers' Champion list with the team they drove for.
+- Added Constructors' Championship history from 1958 to 2025.
+- 2026 Drivers' Champion is listed as Kimi Antonelli. The 2026 Constructors'
+  Championship is explicitly marked as in progress/not decided.
+- Global record boards display the top five only:
+  * Most Grand Prix wins: Hamilton, Schumacher, Verstappen, Vettel, Prost.
+  * Most pole positions: Hamilton, Schumacher, Senna, Vettel, Verstappen.
+  * Most Constructors' titles: Ferrari, McLaren, Williams, Mercedes, Lotus.
+- Your own career-save Hall of Fame remains available separately, with its own
+  top-five driver and constructor tables.
+
+STAFF & RECRUITMENT MARKET EXPANSION (0.9.7 PATCH)
+- Reworked staff recruitment into a Driver Market-style browse-and-recruit list.
+- Added searchable, scrollable candidate lists; search covers staff name, speciality
+  and (where available) team history. Each candidate shows role, rating and fee.
+- Expanded the race-engineer directory with current 2026 pairings and notable
+  historical F1 race-engineering names, alongside fictional game candidates.
+  This is an expanded curated directory, not a claim that every engineer in F1
+  history has been identified.
+- Added more starting-engineer candidates. Each player team has two separate
+  starting-engineer seats, one assigned to each driver.
+- Added a larger pit-crew market with current-team and historic-team crew units,
+  plus fictional recruitable crews. Pit crews are represented as recruitable units;
+  a complete named roster of every mechanic in F1 history is not publicly available.
+- Expanded the sponsor catalogue and raised the partnership portfolio limit to 20.
+- Strategist and academy/reserve staff markets remain available.
+- Staff candidates include real F1 personnel where the role is publicly documented,
+  plus clearly game-created fictional candidates. Ratings and signing fees are game data.
+- Race engineer ratings provide a small qualifying benefit.
+- Starting engineer ratings provide a small race-start/race-pace benefit.
+- Strategist ratings provide a small race-pace benefit.
+- Existing saves are migrated safely: two starting-engineer slots are initialized
+  when the staff department is opened.
+
+PRESERVED
+- 0.9.6 Next Season fix and rollback protection.
+- 0.9.6 cloud-folder save and restore system for both career modes.
+- Existing team, driver, car, race, contract, and career systems.
+
+BUILD
+- Extract the ZIP.
+- Run BUILD_WINDOWS.bat on Windows with Node.js 20+.
+- Install the generated setup file from dist.

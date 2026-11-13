@@ -1,0 +1,26 @@
+GRAND PRIX MANAGER 0.10.9 — HISTORICAL SEASONS UPDATE
+
+BASE
+- Built from Grand Prix Manager 0.10.8 AI Driver Market Fix.
+- Existing team-name, connected R&D, contracts, staff, race simulation, archives, Hall of Fame, portraits and desktop packaging systems are retained.
+
+HISTORICAL CAREER AVAILABILITY
+- 2016, 2017, 2018, 2019, 2020 and 2021 are now selectable immediately.
+- Existing 2022, 2023, 2024, 2025 and 2026 seasons remain selectable.
+- All eleven seasons are available from the season selector; there is no unlock or chronological requirement.
+- Historical grids contain the season-start F1 constructors and two race drivers per constructor.
+- Historical season calendars are supplied, including the shortened 2020 calendar and 22-round 2021 calendar.
+- Engine supplier selection is era-aware for the historical McLaren, Red Bull, Toro Rosso, Force India/Racing Point, Sauber/Alfa Romeo and Renault/Alpine lineages.
+- Career progression maps key constructor name changes: Force India → Racing Point, Toro Rosso → AlphaTauri, Renault → Alpine, Racing Point → Aston Martin, Alfa Romeo → Kick Sauber and Kick Sauber → Audi.
+- Historical calendar events are used in the next-race label and calendar centre.
+
+DATA SCOPE / LIMITATIONS
+- 2016–2021 line-ups represent season-start grids, not a round-by-round record of every mid-season substitute or driver swap.
+- Existing 2022–2026 grids are retained from the 0.10.8 project; they have not been independently rebuilt in this update.
+- This update adds historical season selection, grids, calendars and supplier era handling. It does not claim full period-specific race physics, exact historical car models, complete historical staff rosters, or race-by-race historical results.
+- No Windows installer was built in this environment. The delivered artifact is the complete source project ZIP. Build on Windows with the project's npm install / npm run dist workflow.
+
+QA
+- npm run qa passed, including the new historical-season checks and all inherited regression checks.
+- Historical QA verifies 2016–2021 season availability, constructor counts, two-driver entries, round counts, calendar wiring and engine supplier era mapping.
+- ZIP integrity is checked separately before delivery.

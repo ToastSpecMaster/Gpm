@@ -1,0 +1,18 @@
+GRAND PRIX MANAGER 0.9.9.6 — REALISM / DISPLAY HOTFIX
+
+Based on the uploaded 0.9.9.5 source archive.
+
+Implemented in this patch:
+- 3D chassis viewer now retries loading when its initially hidden garage panel becomes visible.
+- GLB geometry setup reports an explicit error instead of silently leaving a blank viewer when a model has no visible geometry.
+- Car overall rating calculation now validates department values and clamps the computed result to 1–100.
+- Technical-state migration initialises missing car departments from the saved car rating and recalculates the overall rating, avoiding stale fallback values.
+- AI constructor car ratings now develop between seasons instead of resetting to an unchanging baseline. Growth is bounded and mildly influenced by the player's team reputation.
+
+Not represented as completed in this patch: additional season-specific engine manufacturers, driver portrait assets in the market, original house menu soundtrack, full component failure/repair lifecycle, and championship-title counter presentation. These require dedicated implementation and verification rather than being claimed as finished.
+
+Validation performed:
+- JavaScript syntax checks for app.js and car-viewer.js.
+- Existing QA suites: circuit maps, pre-1.0, team creator, 0.9.9.2 technical, contract extensions, and 0.9.9.5 development progression.
+- Archive integrity checked after packaging.
+- Electron GUI visual inspection and Windows installer build were not performed in this environment.

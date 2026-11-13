@@ -1,0 +1,24 @@
+GRAND PRIX MANAGER 0.10.7 — TEAM IDENTITY & R&D TREE FIX
+
+FIXES
+- Hardened the My Team constructor-name input: explicit focus, visible input state, live value mirroring, and Enter-to-submit support.
+- Constructor creation reads the actual typed name and rejects an empty name before creating a save.
+- Replaced the flat R&D upgrade-card display with a six-department, three-stage development tree.
+- Added explicit prerequisite links, locked/unlocked states, upgrade levels, and persistent development history.
+- Added dedicated reliability research nodes for engine durability, gearbox durability, hydraulics, thermal reliability, and electrical reliability.
+- Fixed component aggregation: an individual wing/floor/suspension node now contributes proportionally to its department rating instead of replacing the entire department rating.
+- Engine development remains restricted to teams operating their own works power unit.
+- Purchased R&D levels and latest upgrade messages are saved and survive reopening the chart and season transitions.
+- Updated service-worker cache version and included the new runtime module in the Windows Electron package manifest.
+
+VERIFICATION
+- Full npm run qa suite passed.
+- Browser runtime test verified that the My Team name field is visible, focused, accepts text, and saves the entered constructor name.
+- Browser runtime test verified that the R&D chart opens with six departments and visible development nodes.
+- Runtime test verified prerequisite unlocking, cost deduction, and persistence of the latest R&D message after closing and reopening the chart.
+- Browser runtime test reported no JavaScript page errors.
+- JavaScript syntax and ZIP integrity checks passed.
+
+LIMITATIONS
+- A Windows installer was not built in this environment because the Electron dependencies are not installed here.
+- This update does not claim a complete end-to-end season simulation test.

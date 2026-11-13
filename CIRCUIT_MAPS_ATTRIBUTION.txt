@@ -1,0 +1,13 @@
+CIRCUIT MAP DATA ATTRIBUTION
+
+Circuit layout SVGs used by Grand Prix Manager are from:
+julesr0y, f1-circuits-svg — https://github.com/julesr0y/f1-circuits-svg
+
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+License text: https://creativecommons.org/licenses/by/4.0/
+
+The upstream project documents 78 Formula 1 World Championship circuits and their layout evolutions. Grand Prix Manager selects the correct available layout ID for each event and season in its 2022–2026 calendars.
+
+The Windows build pre-step (npm run dist) downloads the required SVG files into circuits/maps and includes them in the installer. Once packaged, the circuit maps are local assets and can be viewed offline. Run npm run download:circuits to fetch them separately during development.
+
+The upstream repository notes that layout evolutions represent circuit geometry and do not necessarily include pit-lane evolutions, resurfacing, or track enlargement.

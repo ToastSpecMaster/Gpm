@@ -1,0 +1,29 @@
+GRAND PRIX MANAGER 0.9.7 — DRIVER MARKET & TEAM CONTRACT REBUILD
+
+- Rebuilt the Driver Market into a searchable, scrollable, profile-based market.
+- Added sorting by overall rating, potential, and name.
+- Retained separate F1, F2, F3, and Historic F1 categories.
+- Driver profiles show nationality, age, team, rating, potential, wins, podiums,
+  championships, and current contract status when available.
+- Added a full Team Contracts page accessible from the team line-up panel and
+  from the Driver Market.
+- Team Contracts lists both F1 seats, academy/reserve drivers, both race engineers,
+  both starting engineers, the strategist, and pit crew.
+- Contracts show start season, expiry season, annual salary, term remaining, and
+  status; renewal and release actions update saved career data and team inbox.
+- Staff contract records are created on demand for existing saves, preserving
+  prior staff assignments and other career progress.
+- Existing driver transfer/academy negotiation logic is retained and now launched
+  from the selected driver's profile.
+
+INSTALLATION
+1. Back up the current career using SYNC NOW if cloud folder sync is configured.
+2. Extract this ZIP to a new folder.
+3. Run BUILD_WINDOWS.bat and install from the generated dist folder.
+4. Open your career and use VIEW ALL TEAM CONTRACTS under Manage Your Driver Line-up.
+
+TEST LIMITATIONS
+JavaScript syntax and static assertions were checked. ZIP integrity was checked.
+A complete interactive Windows/Electron playthrough and live-save migration test
+were not available in this environment. Keep the previous build until the updated
+build has been opened and checked with a copy of your career save.

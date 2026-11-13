@@ -1,0 +1,11 @@
+Historical Formula 1 season entrant and race-calendar data (1950–2015) is sourced from F1DB by the f1db/f1db project.
+
+Source: https://github.com/f1db/f1db
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+License text: https://creativecommons.org/licenses/by/4.0/
+
+Grand Prix Manager adapts the season entrant records into constructor and driver lists for its two-driver career-management model. Historical constructor line-ups are derived from the season entrant data; the game does not model every race-by-race substitute appearance as a separate seat.
+
+2027 schedule source: https://www.fia.com/news/2027-fia-formula-one-world-championship-calendar-announced
+2027 Racing Bulls driver confirmation: https://www.formula1.com/en/latest/article/lawson-and-lindblad-to-remain-at-racing-bulls-for-2027-as-team-confirm-unchanged-line-up.1vwKafZKAx8zw2Tb4B8fPx
+2027 confirmed-seat snapshot (as of 13 November 2026): https://www.gpfans.com/en/f1-news/1092830/f1-2027-grid-november-2026-one-seat-remaining/

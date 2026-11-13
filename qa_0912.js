@@ -1,0 +1,12 @@
+const fs=require('fs'),assert=require('assert');
+const app=fs.readFileSync('app.js','utf8'),html=fs.readFileSync('index.html','utf8'),pkg=require('./package.json');
+assert.match(pkg.version,/^\d+\.\d+\.\d+$/);
+assert(html.includes('id="musicToggleBtn"'),'home soundtrack control missing');
+assert(html.includes('menu-house-loop.wav'),'local soundtrack audio element missing');
+assert(app.includes('function toggleMenuMusic()')&&app.includes('menuSoundtrack'),'audio-file soundtrack toggle missing');
+assert(app.includes('function openPartsRepair()')&&app.includes('data-repair-part'),'component replacement workshop missing');
+assert(app.includes('Mechanical failure · component damage'),'mechanical failures do not create component damage');
+assert(app.includes('TEAM STAFF INCOMPLETE')&&app.includes('Race strategist'),'race staff readiness gate missing');
+assert(app.includes('Object.keys(PU_SUPPLIERS).map')&&app.includes('Object.keys(GB_SUPPLIERS).map'),'expanded suppliers are not populated in setup');
+assert(app.includes("teamMap?'<th>TEAM</th>':''"),'driver championship constructor column missing');
+console.log('0.10.2 regression QA passed: soundtrack asset, expanded suppliers, mechanical damage/repair, staff readiness gate, and driver-team standings.');

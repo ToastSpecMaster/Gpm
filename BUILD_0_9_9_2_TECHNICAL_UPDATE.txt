@@ -1,0 +1,10 @@
+GRAND PRIX MANAGER 0.9.9.2 — TECHNICAL DEPARTMENT & MARKET FIX
+
+- Replaced Driver Market prompt() negotiation flow with an in-game contract offer form.
+- Supports F1 seat offers, F2/F3 academy signings, F2 academy progression and budget validation.
+- Removed the duplicate Driver Ecosystem shortcuts from the career page.
+- Removed generic power-unit development from chassis upgrades.
+- Added separate power-unit and gearbox supplier management with mid-season switching.
+- Supplier-defined power, performance and reliability feed into race pace and mechanical reliability.
+- Customer teams cannot develop a supplier-owned engine. Works-engine teams can develop their own PU.
+- Existing career saves are normalized with supplier defaults when loaded.

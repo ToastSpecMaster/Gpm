@@ -1,0 +1,15 @@
+GPM 0.10.9.5 QA REPORT
+
+PASS: historical feeder-series data for 2016–2021 is season-specific.
+PASS: 2016 feeder series correctly labelled GP2.
+PASS: 2016 pool excludes Rafael Câmara and other 2026-only juniors.
+PASS: 2017 F2 includes Charles Leclerc.
+PASS: 2022–2026 junior pools remain sourced from the original season-specific lists.
+PASS: 2016 Max Verstappen / Daniil Kvyat swap executes after Round 4.
+PASS: 2019 Alexander Albon / Pierre Gasly swap executes after Round 12.
+PASS: 2025 Yuki Tsunoda / Liam Lawson swap executes after Round 2.
+PASS: transfers update both constructor rosters, update player line-up when managing either team, and are not duplicated.
+PASS: historical transfer runtime script is included in web load, service-worker cache, and Electron build.
+PASS: existing automated QA suite.
+
+Limitations: this patch implements the major verified Red Bull-family driver swaps, not every substitute appearance or every transfer in every season.

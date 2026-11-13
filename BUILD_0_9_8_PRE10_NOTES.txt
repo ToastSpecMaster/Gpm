@@ -1,0 +1,30 @@
+GRAND PRIX MANAGER 0.9.8 — PRE-1.0 MANAGEMENT OVERHAUL
+
+Implemented in this build:
+- Driver Market F1 tab now includes the full non-historic F1 driver metadata pool as well as the selected season grid; F2, F3 and Historic F1 tabs remain available.
+- Contract expiry no longer silently converts an expired deal into an automatic one-year renewal. The incumbent remains temporarily registered with an explicit expired/decision-required status and an inbox alert, allowing the player to renew or recruit a replacement.
+- Team Contracts now has a direct route back to Driver Market.
+- Academy/AI replacement logic uses actual F1, F2 and F3 database drivers rather than fabricated placeholder names. Existing saves containing old “Academy Replacement” or “Academy Prospect” placeholder entries are migrated to real available database drivers where possible. AI teams receive saved academy prospects and process expired contracts during season transitions.
+- Historical Hall of Fame rows are capped before the selected career season. The current simulated season is added to the career season archive only once completed.
+- AI teams independently schedule and apply car-development upgrades during the season. Their ratings feed the existing race-performance calculation and upgrade history is saved.
+- Existing constructor starting ratings remain season-specific; a measured team-principal performance support factor helps any selected constructor remain capable of fighting for wins without changing its displayed chassis rating.
+- Live Race viewer advances one lap at a time, uses circuit-specific lap counts, displays running order, pit-stop events and retirements, saves in-progress race state, and applies championship points only once at the finish.
+- A central management dock links Driver Market, Team Contracts, Staff, Sponsors, Car Development, Championship, Race Archive and Hall of Fame.
+- Existing career saves remain in the existing local save format; new fields are added lazily.
+
+Important limits:
+- Race positions are a lap-by-lap presentation generated from the existing race field and final race pace, not a physics-level telemetry simulation.
+- Circuit lap counts are configured for the supported calendar names; this build does not yet add full track geometry for every circuit.
+- Static syntax and data-integrity checks do not replace an interactive Electron playthrough with a copy of the user's live career save.
+- This is a pre-1.0 development build, not the 1.0 release.
+
+- Added real, season-aware circuit SVG maps to race result screens, the live lap-by-lap race viewer, and archived race results. Layout selection follows the 2022–2026 calendar, including 2022 Barcelona/Singapore revisions and 2026 Madring.
+- The Windows packaging pre-step downloads 28 required SVG layouts from the 78-circuit f1-circuits-svg collection and bundles them locally, so the installed game displays maps offline. Re-run "npm run dist" to download any missing maps automatically.
+- Circuit map attribution and CC BY 4.0 licence information are included in CIRCUIT_MAPS_ATTRIBUTION.txt.
+
+CIRCUIT MAP DOWNLOADER HOTFIX
+- Corrected the broken raw GitHub branch URL handling.
+- The downloader now inspects the upstream repository tree and discovers the actual SVG asset path by filename, rather than assuming a directory layout.
+- Uses a CDN mirror if the raw GitHub host is unavailable.
+- Validates every SVG (including cached files) and refuses to continue to packaging if any requested layout is missing or invalid.
+- Circuit maps are still downloaded during the build on the user's machine and then bundled locally for offline gameplay.

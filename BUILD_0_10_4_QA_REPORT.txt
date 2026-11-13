@@ -1,0 +1,12 @@
+GRAND PRIX MANAGER 0.10.4 — QA REPORT
+
+Verified in this update:
+- JavaScript syntax checks passed for driver-portraits.js, steam-overhaul.js and broadcast-ui.js.
+- Driver portrait unit QA passed: season is included in Commons search; CC BY, CC BY-SA and CC0 are accepted; CC BY-NC and CC BY-ND are rejected; photographer attribution is retained.
+- Full project npm run qa passed, including circuit maps, team creator, driver market contracts, staff, car development, archive/Hall of Fame, age rules, broadcast presentation and portrait tests.
+- package.json version is 0.10.4 and the new driver-portraits.js file is included in the Electron packaging manifest and service-worker core cache.
+
+Not verified:
+- No Electron GUI launch or Windows installer build was run in this environment.
+- No portrait files are bundled locally. Wikimedia Commons photos are requested at runtime, so an internet connection is required to load them. Initials are shown if no reusable photo can be retrieved.
+- The user-supplied sports-site/Getty URLs were not included as distributable assets because redistribution permission was not established.

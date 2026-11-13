@@ -1,0 +1,25 @@
+GRAND PRIX MANAGER 0.10.11.0 — HISTORICAL DATABASE + IPHONE PWA
+
+INTEGRATED
+- Adds selectable seasons 1950–2015. When a season is selected, the game loads that season's official F1DB entrant records and race-directory calendar automatically. No separate database download is required from the player.
+- Historical F1DB season data is cached locally after a successful load, so a season already loaded can be reopened without fetching it again.
+- Constructor line-ups are derived from F1DB season entrants and use the two most-used drivers per constructor where the data supports a two-driver team. Indianapolis 500-only entrants are excluded from the 1950–1960 constructor grid while the championship calendar event remains present.
+- Preserves the existing season-specific 2016–2026 grids and calendars.
+- Adds the FIA-approved 2027 24-round calendar and ten sprint-round markers.
+- Adds a 2027 provisional grid with 21 named drivers and the remaining Haas seat explicitly marked TBC; no unconfirmed driver is invented.
+- Season progression now loads the next historical F1DB season before moving into it, instead of cloning the previous season's grid.
+- Race-result event names now use the selected season's calendar.
+- Prevents the modern 2022–2026 junior-driver pool from being injected into pre-2022 historical careers.
+- Adds F1DB CC BY 4.0 attribution.
+- Adds iPhone-sized Apple touch icon and standard PNG PWA icons, safe-area spacing and larger mobile touch targets.
+- Adds iPhone Safari Add to Home Screen instructions in Settings.
+
+DATA NOTES / LIMITATIONS
+- F1DB's entrant data is transformed into the game's two-driver constructor model. It does not reproduce every mid-season substitute, shared drive, privateer entrant, or race-by-race entry as a separate playable team.
+- The historical feeder-series database (F2/GP2/F3000/F3 and national junior series) is not part of this F1DB integration and has not been fabricated.
+- The first time a 1950–2015 season is opened, the game needs an internet connection to retrieve the official F1DB files. Successfully loaded seasons are cached locally.
+- 2027 is a future season: the FIA calendar is official, while the Haas second seat remains TBC in this build.
+- This is a source/PWA build, not a hosted website or a signed native iOS IPA. iPhone installation requires the game to be served from an HTTPS website; use Safari > Share > Add to Home Screen.
+
+VERSION
+- 0.10.11.0 = complete build package, not yet an official release (.1).

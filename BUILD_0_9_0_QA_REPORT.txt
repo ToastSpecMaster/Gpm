@@ -1,0 +1,20 @@
+GRAND PRIX MANAGER 0.9.0 — QA REPORT
+
+PASSED
+- Node syntax checks: app.js, gpm-064.js, driver-career.js, car-viewer.js, livery-maker.js, save-migration.js, sw.js and Electron main.cjs.
+- package.json parses as valid JSON.
+- Electron project has a secure BrowserWindow configuration (context isolation on, Node integration off, sandbox on).
+- Desktop loading uses a registered app:// protocol handler and does not start a localhost server.
+- Three.js is declared as a packaged runtime dependency and import-map paths point to the local package.
+- 2026 GLB inspection confirms vertex-colour attributes and no UV coordinates; the livery system therefore uses procedural shader colours/stripes.
+- Existing 2022–2026 chassis GLB assets are included.
+
+NOT VERIFIED IN THIS ENVIRONMENT
+- Windows NSIS installer compilation. It must be built on a Windows PC with Node.js 20+ and internet access using BUILD_WINDOWS.bat.
+- Full Electron launch, WebGL rendering, and visual quality of each team livery on a real GPU.
+- Actual race-balance playtesting.
+
+KNOWN LIMITATIONS
+- Three.js is packaged locally, but Google Fonts remain loaded from Google Fonts CDN.
+- The game UI and GLB models are local. The first run does not require localhost or Python.
+- This report documents the original 0.9.0 project, not the 0.9.5 hotfix.

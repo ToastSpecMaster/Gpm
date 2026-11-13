@@ -1,0 +1,10 @@
+const fs=require('fs');const assert=require('assert');
+const css=fs.readFileSync('style.css','utf8');
+const html=fs.readFileSync('index.html','utf8');
+const js=fs.readFileSync('ui-motion.js','utf8');
+for(const name of ['gpm-shell-in','gpm-sheen','gpm-car-lap','gpm-view-in','gpm-modal-in','gpm-motion-visible']) assert(css.includes(name),`Missing animation style: ${name}`);
+assert(css.includes('@media(prefers-reduced-motion:reduce)'), 'Reduced-motion accessibility support missing');
+assert(html.includes('<script src="ui-motion.js"></script>'),'Motion layer is not loaded by the app');
+assert(js.includes('IntersectionObserver')&&js.includes('MutationObserver'),'Dynamic screens and cards are not animated');
+assert(js.includes('prefers-reduced-motion'),'Motion preference is not respected');
+console.log('0.10.1 motion QA passed: hero, track, page, card, modal, button, dynamic-content and reduced-motion hooks present.');

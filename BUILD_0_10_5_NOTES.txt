@@ -1,0 +1,23 @@
+GRAND PRIX MANAGER 0.10.5 — CAREER REALISM & GRID INTEGRITY UPDATE
+
+Implemented in this source update:
+- Modern 2022–2026 active grids no longer receive retired historical legends as emergency AI replacements.
+- Existing modern saves are repaired by removing retired legends from active team rosters and filling vacancies from season-appropriate feeder drivers.
+- Known 2022–2026 season grids are now preserved as authored; the random off-season transfer generator only runs beyond the supplied 2026 grid. This prevents impossible random historical-era transfers such as Fernando Alonso moving to Mercedes in 2023.
+- The driver market now offers uncontracted free agents, current-season F2/F3/F4 prospects and the explicitly labelled Prime versions, while drivers already contracted to another F1 team are not presented as free agents.
+- Career driver cards and the active transfer modal now have portrait slots using the shared Commons licence-aware resolver.
+- Season archive is grouped by season. Selecting a Grand Prix opens its podium first, with full classification available as a second action.
+- The Hall of Fame's season-by-season champion history now merges completed simulated career seasons into the historical list and replaces the real-world result for the same season in that save.
+- R&D adds a dedicated reliability department and a persistent latest-development status message.
+- Passive car-part wear was removed. Purchased upgrades and component ratings are preserved across season transitions; mechanical failures and explicit FIA regulation events remain separate events.
+- Sponsor race-weekend payments now scale with team reputation and performance/podium bonuses have been increased.
+- The pre-season grid is presented as team cards, including the player's reserve/junior programme.
+- Power-unit and gearbox supplier cards show both annual supplier cost and immediate switch cost.
+
+Known limitations still requiring a larger simulation pass:
+- The transfer engine is not yet a full contract negotiation model with realistic multi-year contract expiry, driver preference, salary bidding, team reputation attraction and seat-by-seat market logic.
+- Future grids after 2026 are generated from the existing roster template and should not be treated as verified real-world grids.
+- The R&D screen is an expanded component department interface, not a complete F1 25-style visual research tree yet.
+- The Hall of Fame global all-time statistical leaderboard remains a historical reference; career-specific championship history is now updated by the simulated save.
+- Portraits still depend on internet access and the availability of a Commons image with an accepted licence.
+- Full Electron GUI launch, Windows installer and manual visual verification were not run in this environment.

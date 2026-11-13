@@ -1,0 +1,21 @@
+GRAND PRIX MANAGER BUILD 0.6.5 — QA REPORT
+==========================================
+
+Static checks performed:
+- JavaScript syntax checks passed for app.js, gpm-064.js, livery-maker.js, car-viewer.js and sw.js.
+- HTML ID uniqueness checked.
+- Local script references checked, including the save migration helper.
+- Both supplied GLB files are packaged; GLB 2.0 magic/version and declared file lengths checked.
+- Three.js import map now includes the addon path and dynamic viewer startup reports a readable error if the engine cannot load.
+- START_GAME.bat starts a localhost HTTP server; direct file:// launch is no longer documented because browsers block module and GLB fetches there.
+- Hall of Fame aggregates all classified drivers and constructors from race archive results; processed event/season IDs prevent duplicate counting.
+- Team customization persists constructor name, logo initials, primary/secondary colours and slogan.
+- Current livery can be applied to the player's team and stored with the career.
+- Added JSON import/export helpers to migrate careers from the previous file:// browser origin to localhost and create backups.
+
+Runtime testing limitation:
+- A full interactive browser/GPU playtest was not available in this build environment. CDN reachability and browser-specific GLB material mapping therefore still need confirmation on the user's PC. The 3D engine loads Three.js from jsDelivr, so an internet connection is required; the two GLB model files are local.
+- Before relying on a long-running career, test a copied career save, open both chassis in Garage, apply a saved livery, run one race, and inspect Hall of Fame and constructor branding.
+
+Save safety:
+- Career data remains in browser local storage and is not embedded in the ZIP. Use the same browser profile and same localhost origin for existing saves. Back up browser site data before clearing storage.

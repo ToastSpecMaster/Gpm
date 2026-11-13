@@ -1,0 +1,35 @@
+GRAND PRIX MANAGER 0.9.7 — QA REPORT
+
+PASSED
+- Node syntax checks for app.js, gpm-064.js, driver-career.js, main.cjs and preload.cjs.
+- package.json parses and reports version 0.9.7.
+- Historical Drivers' Championship data contains 77 consecutive seasons (1950–2026)
+  and 36 distinct champion names.
+- Historical Constructors' Championship data contains 68 seasons (1958–2025).
+- The 2026 Constructors' Championship is marked in progress, not assigned to a team.
+- Global leaderboards contain exactly five entries each for wins, poles and constructor titles.
+- Exact staff/sponsor catalogue counts from the loaded market data: 53 race engineers,
+  20 starting engineers, 12 strategists, 27 pit-crew units and 36 sponsor offers.
+- Staff markets render a search field and a bounded, vertically scrollable candidate list.
+- Two starting-engineer assignments are available, one per driver on the player's team.
+- Sponsor catalogue is expanded and the signing cap is 20 partnerships.
+- Historical/current race-engineer directory is curated, not exhaustive; pit-crew
+  options are team units rather than every individual mechanic.
+- Race simulation reads race engineer, starting engineer and strategist ratings.
+- 0.9.6 season-transition rollback code remains present.
+- 0.9.6 Electron cloud-save IPC and preload bridge remain present.
+
+NOT VERIFIED HERE
+- Exhaustive coverage of every race engineer or every individual pit-crew mechanic in F1 history; the included lists are curated and expandable.
+- Full interactive Windows Electron playthrough.
+- User's existing save in a live game.
+- Windows installer build and cloud-provider synchronization.
+- Historical F1 leaderboard values are reference statistics, not calculated from the
+  game's fictional career simulation.
+
+HISTORICAL DATA BASIS
+- Drivers' champions: 1950–2025 historical season list, plus 2026 champion result.
+- Driver wins and pole totals checked against 2026 stats through the Mexico City GP /
+  early-November 2026.
+- Constructors' titles: championship totals through 2025; 2026 constructors' season
+  remains marked as in progress.

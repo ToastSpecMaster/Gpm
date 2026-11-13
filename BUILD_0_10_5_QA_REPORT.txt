@@ -1,0 +1,14 @@
+GRAND PRIX MANAGER 0.10.5 — QA REPORT
+
+Automated verification completed:
+- Full `npm run qa` passed, including all legacy regression suites and the new 0.10.5 career-realism checks.
+- JavaScript syntax checks passed for app.js, gpm-064.js, steam-overhaul.js, broadcast-ui.js, driver-portraits.js and qa_0105.js.
+- Existing 2022–2026 grids are no longer passed through random off-season reshuffling.
+- Modern roster repair excludes retired historical legends.
+- Season archive, Hall of Fame merge, persistent R&D status, reliability department, portraits, pre-season grid and sponsor reputation multiplier have source-level regression checks.
+- Runtime save-migration test removed Ayrton Senna and Alain Prost from a 2023 Williams save and restored a unique two-driver lineup.
+
+Not verified:
+- No Electron GUI launch or Windows installer build was run.
+- No live Wikimedia image fetch or manual portrait visual check was run.
+- No manual in-game career playthrough was run.

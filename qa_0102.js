@@ -1,0 +1,23 @@
+const fs=require('fs');const vm=require('vm');const path=require('path');
+const root=__dirname;
+const source=fs.readFileSync(path.join(root,'broadcast-ui.js'),'utf8');
+const portraitSource=fs.readFileSync(path.join(root,'driver-portraits.js'),'utf8');
+const context={window:{},document:{getElementById:()=>null},fetch:()=>Promise.reject(new Error('offline')),Date,Math,console};
+vm.createContext(context);vm.runInContext(source,context);
+const age=context.window.GPMDriverAge;
+function assert(ok,msg){if(!ok)throw new Error(msg);}
+assert(age.ageInSeason('Michael Schumacher',2026)>50,'Schumacher must be over 50 in 2026');
+assert(age.ageInSeason('Mika Hakkinen',2026)>50,'Hakkinen must be over 50 in 2026');
+assert(age.ageInSeason('Ayrton Senna',2026)>50,'Senna must be over 50 in 2026');
+assert(age.ageInSeason('Lance Stroll',2026)<50,'Stroll must remain eligible in 2026');
+assert(!age.eligible('Michael Schumacher',2027),'Schumacher must remain ineligible in later seasons');
+assert(age.ageInSeason('Fernando Alonso (Prime)',2026)===age.ageInSeason('Fernando Alonso',2026),'Prime duplicates must use the same real birth date');
+assert(!age.eligible('Michael Schumacher',2026),'Schumacher must be ineligible for a 2026 seat');
+assert(age.eligible('Lance Stroll',2026),'Stroll must remain eligible');
+assert(age.ageInSeason('Unknown Driver',2026)===null,'Unknown DOB must not be fabricated');
+assert(source.includes('GRID WALK')&&source.includes('POST-RACE CEREMONY'),'Broadcast screens missing');
+assert(portraitSource.includes('CC BY')&&portraitSource.includes('PUBLIC DOMAIN'),'Portrait licence filter missing');
+assert(source.includes('GPMDriverPortraits'),'Broadcast does not use the shared portrait service');
+const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
+assert(html.includes('broadcast-ui.js'),'Broadcast script is not loaded');
+console.log('0.10.2 age and broadcast QA passed.');

@@ -1,0 +1,12 @@
+GRAND PRIX MANAGER 0.10.9.5 — HISTORICAL TRANSFER & FEEDER GRID FIX
+
+- Corrected the 2016 feeder-series pool: the series was GP2, not the later FIA F2 championship.
+- Added season-specific GP2/F2 driver pools for 2016–2021.
+- Removed the dangerous fallback that reused the latest junior pool for seasons with no historical list. This prevented 2026 prospects such as Rafael Câmara from appearing in 2016.
+- Added the 2016 Red Bull/Toro Rosso mid-season swap after Round 4: Max Verstappen promoted to Red Bull Racing; Daniil Kvyat returned to Toro Rosso.
+- Added the 2019 Red Bull/Toro Rosso mid-season swap after Round 12: Alexander Albon promoted; Pierre Gasly returned to Toro Rosso.
+- Added the 2025 Red Bull/Racing Bulls swap after Round 2: Yuki Tsunoda promoted; Liam Lawson returned to Racing Bulls.
+- Transfers are recorded in the career history and only apply once.
+- Existing career systems and historical season data retained.
+
+Version suffix .5 denotes a bug-fix build under the GPM versioning convention.

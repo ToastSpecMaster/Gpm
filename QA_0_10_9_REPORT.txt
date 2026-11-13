@@ -1,0 +1,85 @@
+
+> grand-prix-manager@0.10.9 qa
+> node qa_0109.js && node qa_0107.js && node qa_0106.js && node qa_circuit_maps.js && node qa_pre10.js && node qa_team_creator.js && node qa_0992.js && node qa_contract_extensions.js && node qa_0995.js && node qa_0996.js && node qa_0997.js && node qa_0912.js && node qa_0100.js && node qa_0101.js && node qa_0102.js && node qa_0103.js && node qa_0104.js && node qa_0105.js
+
+0.10.9 historical QA passed: 2016–2021 playable season grids, correct constructor counts, two drivers per team, round counts, calendar wiring and era-appropriate engine suppliers.
+0.10.9 regression QA passed: constructor-name input hardening, connected R&D prerequisites, aggregate ratings and persistent upgrade state.
+0.10.9 inherited feature and syntax checks passed.
+PASS Runtime market check: current Vettel stays contracted while Vettel (Prime) remains separately selectable.
+PASS Runtime Hall of Fame archive check: 2023 Lewis Hamilton replaces stale champion entry.
+PASS Load-time integration smoke test: 0.10.9 module initializes without unresolved global references.
+Circuit map QA passed: every round in the 2022–2026 calendars maps to a season-specific local SVG path; all 28 required layouts are in the installer download manifest.
+0.9.9 QA passed: live-versus-simulated race choice, lap snapshots, circuit lap counts, 2022–2026 season calendars, six-position staff readiness, academy retention, F1-first AI vacancy repair, contract renewal, AI development, legacy placeholder migration.
+PASS Team name is a real text input
+PASS Modal dynamic content uses a DIV container
+PASS Create button is explicitly non-submit
+PASS My Team flow reveals and focuses the input
+PASS Career save is guarded against storage errors
+PASS Home front page contains all three career modes
+PASS Existing save lists remain mounted
+PASS Front page redesign styles are present
+Team Creator + home screen QA passed (8 checks).
+PASS Driver negotiations no longer depend on prompt()
+PASS Academy signing has a dedicated in-game path
+PASS F2 promotion lets the player choose either F1 seat
+PASS Contract offer validates budget, salary, years and bonus
+PASS Duplicate Driver Ecosystem block removed
+PASS Power unit excluded from generic upgrade packages
+PASS Dedicated PU and gearbox supplier window exists
+PASS Technical supplier window is reachable from the management dock
+PASS Mid-season supplier switching is supported
+PASS Works-engine ownership gates engine development
+PASS Own Works supplier is selectable during custom team setup
+0.9.9.2 technical update QA passed (11 checks).
+PASS Team contract roster helper exists (prevents the 0.9.9.3 ReferenceError)
+PASS Contract roster includes race engineers, starting engineers, strategist and pit crew
+PASS Staff contract records receive safe defaults
+PASS Contract renewal uses an in-game extension window
+PASS Contract renewal no longer uses native prompt dialogs
+PASS Extension adds seasons to the existing expiry date
+PASS Original contract start date is preserved
+PASS Renewal salary, term and bonus are validated
+PASS Renewal bonus checks and deducts available budget
+PASS Expiry preview updates as extension term changes
+PASS Successful extension saves, logs inbox update and refreshes contracts
+PASS Responsive extension window styles exist
+Contract extension QA passed (12 checks).
+PASS Car development has separate Aero, Chassis, Suspension and Brakes tabs
+PASS Aero tab exposes front wing, rear wing, floor, diffuser, beam wing and bodywork
+PASS Power unit has its own development tab
+PASS Customer engine development is locked to works engine ownership
+PASS Power unit tab displays power and reliability
+PASS Starting staff are automatically assigned to all six required positions
+PASS Young driver development increases ratings up to potential
+PASS Young driver development runs as races advance
+PASS Retirement record stores retirement year
+PASS Hall of Fame lists retired drivers and retirement year
+0.9.9.5 progression/development QA passed (10 checks).
+PASS Windows package version is valid SemVer
+PASS Car rating uses validated department values
+PASS Missing department ratings migrate from saved car rating
+PASS AI car ratings receive bounded between-season development
+PASS 3D garage is intentionally removed from visible navigation
+Windows package regression QA passed.
+PASS: runtime checks confirm per-round ratings change and off-season transfers preserve a unique two-driver grid.
+PASS: per-round AI rating progression, bounded development, off-season transfers/retirements, pre-season report, and player line-up preservation.
+0.10.2 regression QA passed: soundtrack asset, expanded suppliers, mechanical damage/repair, staff readiness gate, and driver-team standings.
+0.10.2 source QA passed: management hub, garage removal, licensed portrait flow, works engine modules, sponsor race payments and soundtrack asset.
+0.10.1 motion QA passed: hero, track, page, card, modal, button, dynamic-content and reduced-motion hooks present.
+0.10.2 age and broadcast QA passed.
+PASS Season archive snapshots preserve full driver standings
+PASS Season archive snapshots preserve constructors standings
+PASS Archive has an idempotent per-season guard
+PASS Completed season updates career Hall of Fame once
+PASS Final race automatically archives without requiring next-season click
+PASS Hall of Fame reads permanent season archive
+PASS Hall of Fame displays completed-season count
+PASS Unfinished 2026 championship is not pre-awarded
+PASS Career progression remains open-ended beyond supplied seasons
+PASS Version updated to 0.10.9
+PASS Broadcast presentation script is included in Windows installer
+PASS Runtime archive test: season snapshot, one-time title, preserved race stats, pole capture and duplicate prevention.
+0.10.9 archive regression QA passed (16 checks).
+0.10.7 driver portrait QA passed.
+0.10.9 career realism QA passed.
+PASS Runtime season-aware migration removes Senna/Prost from 2023 while preserving Alonso and Vettel on their real 2022 grids.

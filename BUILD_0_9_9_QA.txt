@@ -1,0 +1,8 @@
+GRAND PRIX MANAGER 0.9.9 — QA
+
+PASS: node --check app.js
+PASS: node --check pre10-overhaul.js
+PASS: node qa_pre10.js — verifies race mode chooser offers Live Race and Simulated Race, plus lap snapshots, calendar, staff readiness, academy replacement, AI contracts and development.
+PASS: node qa_circuit_maps.js — verifies calendar-to-local-map manifest references.
+
+NOT VERIFIED: live download of all circuit SVG assets or Electron Windows installer packaging. The previous 0.9.8 circuit downloader failure remains a separate packaging blocker and is not represented as fixed by this race-mode update.

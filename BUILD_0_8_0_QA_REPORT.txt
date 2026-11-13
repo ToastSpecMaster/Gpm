@@ -1,0 +1,14 @@
+GRAND PRIX MANAGER 0.8.0 — BUILD CHECK REPORT
+
+Passed:
+- JavaScript syntax checks for app.js, gpm-064.js, driver-career.js, car-viewer.js, livery-maker.js, save-migration.js and sw.js.
+- Static HTML ID uniqueness and required Driver Career controls check.
+- ZIP integrity check and presence of both 3D car models.
+- Driver career progression gates: F4 requires 3 seasons, F3 requires 3 seasons, F2 requires 2 seasons before promotion eligibility.
+- Team application and rejection paths are implemented for initial signing and promotions.
+- Engine and gearbox supplier selections are stored and affect the user's race pace.
+- Academy/reserve drivers remain in the feeder championship pool and are labelled as still racing in their series.
+
+Not yet verified:
+- Full interactive browser and GPU playtest remains unavailable in this environment.
+- Race balance should be playtested over complete seasons and tuned from actual player results.

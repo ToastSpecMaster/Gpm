@@ -1,0 +1,46 @@
+GRAND PRIX MANAGER 0.10.10.0
+HISTORICAL CAREER, REGULATION & CONTRACT OVERHAUL
+
+BUILD STATUS
+- 0.10.10.0 = complete development build, not yet released.
+- Do not label this build 0.10.10.1 until it has been tested and approved as a release.
+
+WHAT CHANGED
+
+1. SEASON-CORRECT HISTORICAL GRIDS (2016–2026)
+- Added a one-time save migration that rebuilds a historical career's grid from the selected season's constructor and driver entries.
+- A 2019 career now starts from the 2019 season grid rather than retaining the 2016 grid.
+- Existing constructor careers use the selected season's official starting line-up unless an explicitly player-negotiated, unexpired contract overrides a seat.
+- Custom-team careers retain their own drivers while using the selected season's surrounding grid.
+- The new season grid is loaded before the pre-season report is displayed.
+
+2. SEASON-BY-SEASON REGULATION PACKAGES
+- Added 2016–2026 technical, sporting and financial regulation summaries.
+- Includes the 2017 wider-car/aero reset, 2018 Halo introduction, 2019 aerodynamic simplification, 2020 component freeze and COVID calendar changes, 2021 floor/cost-cap changes, 2022 ground-effect reset, 2023 floor/safety refinements, 2024–2025 carry-over rules, and the 2026 active-aero/power-unit reset.
+- Major regulation changes now happen at season transitions, not as random mid-season penalties.
+- Regulation changes affect the player's car and AI car ratings.
+- The season regulations and their in-game department effects are shown in the constructor introduction and pre-season grid briefing.
+
+3. CONTRACT EXPIRY
+- Driver contracts are checked at the new-season transition.
+- Expired drivers are marked expired, removed from their race seats and released to the driver market.
+- Vacancies are filled from available F1 drivers first; an F2 promotion is only used when no suitable F1 driver is available.
+- Player-negotiated and extended contracts are tracked separately so historical baseline grids do not erase a valid signing.
+- Historical default contract end dates are aligned to each driver's final season in the supplied historical grids, avoiding arbitrary mass expiries that would destroy authentic season line-ups.
+
+4. R&D RATING RECOVERY
+- Regulation and mechanical losses are synchronized into the affected individual R&D nodes.
+- Upgrading those same nodes can restore the lost department rating.
+- Department aggregation now shows a visible point of recovery after an individual component upgrade.
+- Part replacement also synchronizes the R&D node values.
+
+TESTING
+- Full npm run qa regression suite passed.
+- New tests cover 2019 grid migration, all 2016–2026 regulation profiles, one-time regulation resets, AI rating impact, R&D rating recovery, contract expiry and replacement.
+- Existing historical transfer, feeder-series, career, archive, market, staff, circuit-map and package checks passed.
+- ZIP integrity checked separately after packaging.
+
+LIMITATIONS
+- Regulation descriptions summarize the major season-specific technical, sporting and financial changes; they are not a verbatim reproduction of every article in the FIA rulebooks.
+- The historical roster data remains season-start grids plus separately implemented headline mid-season swaps; it is not a complete record of every substitute appearance.
+- This is a source ZIP. A Windows installer build and full Electron launch were not performed in this environment.

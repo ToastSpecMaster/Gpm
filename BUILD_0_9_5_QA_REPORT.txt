@@ -1,0 +1,13 @@
+GRAND PRIX MANAGER 0.9.5 — QA REPORT
+
+PASSED
+- JavaScript syntax check: app.js
+- JavaScript syntax check: gpm-064.js
+- package.json parses and reports version 0.9.5
+- Verified the wrapped advanceSeason function now returns false when there is no active career or when the transition throws.
+- Verified the wrapped advanceSeason function returns true after the core transition and post-season processing complete.
+- Verified the season-finale button closes the modal only when advanceSeason returns true.
+
+NOT VERIFIED IN THIS ENVIRONMENT
+- Full interactive Electron playthrough with an existing Windows save.
+- NSIS installer compilation on Windows. Rebuild with BUILD_WINDOWS.bat on Windows using Node.js 20+.

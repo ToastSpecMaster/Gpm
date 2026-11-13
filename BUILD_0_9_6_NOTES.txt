@@ -1,0 +1,28 @@
+GRAND PRIX MANAGER 0.9.6
+
+FIXES
+- Fixed the season-finale Hall of Fame update. Championship standings are objects
+  with name/points fields; the previous code incorrectly treated them as arrays,
+  which could throw before the finale modal appeared.
+- Season advancement now guards against double clicks and rolls the entire career
+  object back if any transition stage throws. Failed transitions no longer leave
+  a partially changed season save.
+- Existing season transition, roster, contract, retirement and history systems remain.
+
+CLOUD CAREER SAVES
+- The Windows desktop app can connect to a folder synchronized by OneDrive, Dropbox,
+  iCloud Drive or another desktop sync provider.
+- The game writes grand-prix-manager-cloud-save.json into that selected folder.
+- Both Team Principal careers and Driver Career saves are included.
+- Career changes automatically sync after a cloud folder is connected.
+- SYNC NOW forces an immediate upload; RESTORE CLOUD SAVE replaces local career
+  lists after a confirmation prompt.
+- This is cloud-folder synchronization through the user's installed sync provider,
+  not a game-hosted account service. The game does not upload saves to an OpenAI
+  or Grand Prix Manager server.
+
+SETUP
+1. Build/install using BUILD_WINDOWS.bat on Windows with Node.js 20+.
+2. Start the game and choose CONNECT CLOUD FOLDER on the main career/save screen.
+3. Select a folder inside OneDrive, Dropbox, iCloud Drive or another synced folder.
+4. Keep that sync provider running for off-device cloud synchronization.

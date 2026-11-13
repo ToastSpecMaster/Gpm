@@ -1,0 +1,21 @@
+GRAND PRIX MANAGER 0.9.12 — COMPLETE UPDATE NOTES
+
+This release is built from the supplied 0.9.11 project archive.
+
+IMPLEMENTED IN THIS BUILD
+- Original procedural house soundtrack on the home screen, controlled by the ♫ button. Audio starts only after a user click; the setting is stored locally.
+- Expanded power-unit and gearbox supplier catalogues in both new-career setup and the technical supplier market.
+- Garage component-condition display for aerodynamics, chassis, power unit, suspension and reliability.
+- Mechanical retirements can damage a component. Worn/damaged parts can be replaced in the Parts & Reliability Workshop for a budget cost.
+- Driver championship table now includes the driver's current constructor beside the points total.
+- New careers receive two race engineers, two starting engineers, one strategist and a pit crew. A race is blocked if any required position is subsequently left vacant.
+- Preserved existing 0.9.11 systems: driver market, contracts, staff markets, sponsor market, junior academy, historical Hall of Fame, circuit layouts, race archive, AI car progression and pre-season roster report.
+
+IMPORTANT LIMITATIONS
+- This update does not add a complete library of official driver portrait photographs. No portrait-photo asset pack was present in the supplied archive, and this release does not substitute fake photos or claim that feature is complete.
+- Circuit maps remain dependent on the existing circuit SVG assets / download step.
+- The soundtrack is an original synthesized house loop, not a licensed commercial song.
+
+BUILD / TEST STATUS
+- See BUILD_0_9_12_QA_REPORT.txt for the checks run on this archive.
+- Windows installer creation is separate from source ZIP packaging. Run BUILD_WINDOWS.bat on Windows with Node.js 20+ and an internet connection to produce the NSIS installer.

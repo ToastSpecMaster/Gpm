@@ -1,0 +1,18 @@
+GRAND PRIX MANAGER 0.10.6 — QA REPORT
+
+Automated checks run on 11 November 2026:
+- `npm run qa` completed successfully.
+- New 0.10.6 checks passed for module loading, PWA cache version, historical-driver restrictions, Prime editions, free-agent release, reputation effects, AI transfer model, season archive rebuild, R&D chart, reliability research, supplier acquisition pricing, soundtrack control, portraits and pre-season grid presentation.
+- Runtime market test confirms Sebastian Vettel remains assigned to his current F1 seat while Sebastian Vettel (Prime) remains separately selectable.
+- Runtime save migration confirms Senna/Prost are removed from a 2023 grid while Alonso and Vettel remain in their actual 2022 seats.
+- Season-transition source regression confirms authored historical grids are not overwritten by prior-year AI line-ups; retirements are disabled before the future-grid era.
+- Runtime archive test confirms a stale 2023 champion record is replaced with Lewis Hamilton when the final simulated standings show him as champion.
+- JavaScript syntax checks passed for app.js, gpm-064.js, steam-overhaul.js, broadcast-ui.js and career-overhaul-0106.js.
+- Existing regression suites passed for circuits, team creator, contract negotiation, staff readiness, mechanical failures, archives, Hall of Fame, broadcast, portraits, age restrictions and save migration.
+- ZIP integrity was checked after packaging.
+
+Not verified:
+- Full Electron GUI interaction and manual multi-season career playthrough.
+- Actual soundtrack playback on Windows speakers.
+- Live Commons portrait retrieval and every driver's final image choice.
+- Windows NSIS installer build; Electron dependencies are not installed in this build environment.

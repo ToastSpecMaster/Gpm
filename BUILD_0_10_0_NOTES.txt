@@ -1,0 +1,22 @@
+GRAND PRIX MANAGER 0.10.0 — MANAGEMENT OVERHAUL PRE-RELEASE
+
+BASE
+Built from the supplied Grand Prix Manager 0.9.12 source archive.
+
+IMPLEMENTED IN THIS SOURCE BUILD
+- Removed the visible 3D garage, livery studio and chassis selector from the game flow. The legacy hidden DOM anchors remain only so older save and UI scripts do not crash. The 3D model viewer and model files are no longer included in the Windows package manifest.
+- Added a dedicated Team Principal Management Centre in Team HQ: Driver Market, Technical Department, Commercial Partners, Team Personnel, Championship and Season Archive.
+- Added an original 31.5-second electronic house loop as a local WAV asset. The menu music toggle plays this actual audio file; it does not rely on generated beeps or an internet stream. Playback starts only after a user click.
+- Added a Works Engine Development workshop with seven separately upgradeable modules: internal combustion engine, turbocharger, energy store, MGU-K, control electronics, fuel system and thermal management. Only teams running their own works power unit can upgrade these modules.
+- Added recurring sponsor payments after completed race weekends, plus performance and podium bonuses. Signing contributions are separate from recurring payments. Existing sponsor saves are migrated into recurring-payment calculations.
+- Added driver-market portrait lookup through Wikimedia Commons. The game displays only images whose file metadata declares a reusable CC0, CC BY, CC BY-SA or public-domain licence, with attribution text shown below the portrait. If no suitable portrait is found or the user is offline, an initials fallback is displayed. Portrait availability is not guaranteed for every driver.
+- Updated the desktop window title and package version to 0.10.0.
+
+NOT YET COMPLETE — DO NOT MARKET AS FINISHED
+- The current career database still contains modern 2022–2026 season grids and a limited historic-legend list. It does NOT yet contain every F1 driver and constructor from 1950–2026/27, nor a fully modelled season-by-season team lineage system.
+- 2027 is a future season and its final entry list, calendar and results are not complete at this build date. The game must not invent confirmed 2027 drivers or teams.
+- The driver photo lookup is dynamic and licence-filtered; it does not ship a complete portrait archive.
+- This is not a Steam-ready commercial release. Store assets, legal review of all third-party data and trademarks, full historical database integration, broad gameplay QA, controller/accessibility testing, and Steamworks integration remain outstanding.
+
+QA
+See BUILD_0_10_0_QA_REPORT.txt. Source syntax, existing regression suites, archive integrity and packaging manifest are checked separately. No claim of full in-game visual testing is made unless a Windows Electron build is actually launched and tested.

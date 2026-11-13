@@ -1,0 +1,26 @@
+GRAND PRIX MANAGER 0.10.6 — COMPLETE CAREER SYSTEM OVERHAUL
+
+This update modifies existing career systems and screens.
+
+Implemented in source:
+- Removed the unconditional random AI team-to-team driver swap that could put Alonso at Mercedes in 2023 or create other era-breaking transfers. Season transitions now use the authored 2022–2026 grid instead of carrying every AI team’s previous lineup forward. Active drivers such as Alonso and Vettel are preserved in the exact years they belong to, while retired legends such as Senna and Prost are removed from modern race seats.
+- Preserved authored 2022–2026 grids. Future off-season movement is contract-window based, with low-volume F2 promotion and rare age/service-based retirements instead of mandatory random swaps or mass F2 intake.
+- Added a Prime edition of every active-season driver to the Historic F1 market as a distinct driver identity, including drivers still racing in the current grid. Prime ratings derive from the active driver's base rating.
+- Releasing a driver from the player's seat sends them to free agency, not the junior/reserve programme. The replacement is selected before the seat is changed.
+- F2 and F3 drivers are eligible for the reserve programme; only F2 prospects may be promoted directly to an F1 race seat. F4 drivers are not auto-promoted. A modern team cannot sign a contracted rival F1 driver or a non-Prime historical legend as a replacement; it must choose a free agent, eligible feeder driver, or a separate Prime edition.
+- Rebuilt the R&D interface as a department chart with incremental upgrades, costs, current levels, and persistent latest-action status. Includes aerodynamics, chassis, suspension, reliability, power unit and gearbox.
+- Reliability has its own research department. Works-engine development remains restricted to a works engine.
+- Upgrades are incremental and retained. Automatic FIA regulation losses are disabled; only explicit mechanical failure damage or player repair decisions affect installed condition.
+- Supplier market now displays annual supply price and a separate immediate acquisition/switch fee for both power units and gearboxes.
+- Sponsor race payments have a higher minimum per-partner floor and scale with reputation and performance; reputation also reduces driver contract salary expectations within a capped range.
+- Hall of Fame rebuilds completed season champions from final championship standings and replaces stale records for the same season, preventing duplicate or stale championship entries (e.g. Lewis Hamilton's career title total after a simulated 2023 title).
+- Pre-season presentation shows a designed full-grid layout, two race seats per constructor, plus available reserve/junior entries.
+- Added portrait loading to the Historic F1 market profile and retried portrait loading on career cards.
+- Menu soundtrack control now uses a dedicated user-click handler for the bundled local WAV file.
+
+Important limitations:
+- The 2022–2026 season grids remain the supplied historical grids; the game does not have a verified, fully licensed, complete historical database for every future transfer or every F2/F3 season.
+- AI transfers after 2026 are simulated by contract expiry and team performance, with rare age-based retirements and replacement seats. This is a restrained career simulation, not a fully researched real-world driver preference/agent model.
+- Portraits are retrieved from Wikimedia Commons at runtime and require internet access; a missing portrait falls back to initials. The user-provided Getty/sports-site images are not bundled because commercial reuse permission was not established.
+- The soundtrack file is present and the menu control is wired, but actual playback still needs manual verification on the user's Windows machine.
+- Electron GUI launch and Windows installer build were not run in this environment.

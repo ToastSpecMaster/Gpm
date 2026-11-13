@@ -1,0 +1,12 @@
+GRAND PRIX MANAGER 0.10.8 — AI DRIVER MARKET FIX
+
+Fixed a multi-season career bug in which the AI contract cycle could automatically promote academy F2 drivers into F1 seats when multiple contracts expired at once. The offseason was running two independent driver-management passes; the second pass treated every expired contract as an academy promotion opportunity.
+
+Changes:
+- The contract/transfer simulator remains the sole owner of AI offseason transfers and retirements.
+- The follow-up AI contract pass now renews expiring contracts after the transfer window instead of mass-promoting academy prospects.
+- Genuine AI roster vacancies are filled from available F1 drivers first. If no F1 driver is available, the vacancy is left open rather than triggering a mass F2 intake.
+- Academy F2/F3 drivers remain in their feeder/academy pools until a deliberate promotion decision.
+- Player roster repair now checks the available F1 driver pool before considering highly rated F2/F3 prospects.
+
+Verification scope: source-level regression tests cover expired contracts, retained F2 academy membership, F1-first vacancy filling, and player roster repair order. This is a source ZIP; no Windows installer or full Electron GUI launch is claimed.

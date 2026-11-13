@@ -1,0 +1,11 @@
+GRAND PRIX MANAGER 0.9.5 — SEASON TRANSITION HOTFIX
+
+FIXED
+- Fixed the Next Season / START NEXT SEASON button appearing not to respond.
+- The later career wrapper now returns the success/failure result from the core season transition.
+- The season-finale modal closes only when the season transition succeeds.
+- Added explicit error reporting if the extended transition fails.
+- Preserves the existing career transition flow: standings archive, roster/contracts, driver ages, retirement processing, next-season reset, inbox and save.
+
+SCOPE
+- This is a focused 0.9.5 hotfix for the Next Season action. Other 0.9.5 roadmap features remain separate planned work.

@@ -1,0 +1,30 @@
+GRAND PRIX MANAGER 0.9.9.5 — DEVELOPMENT, PROGRESSION & RETIREMENTS
+
+CAR DEVELOPMENT
+- Rebuilt the development chooser with separate Aero, Chassis, Suspension, Brakes, Power Unit and Gearbox tabs.
+- Aero contains individual front wing, rear wing, floor/underfloor, diffuser, beam wing and bodywork airflow components.
+- Chassis, suspension and brake departments each contain individual upgradeable components.
+- Each component has its own rating, cost, upgrade action and saved state.
+- Power Unit tab displays power and reliability. Works teams can develop their own engine; customer teams are locked and must use supplier contracts.
+- Gearbox tab directs supplier-managed teams to their gearbox contract screen.
+
+STAFF
+- New and existing careers automatically receive two race engineers, two starting engineers, a strategist and a pit crew if those roles are vacant.
+- Starter staff are entry-level and do not consume the hiring budget. They can be replaced through the Staff department.
+
+DRIVER DEVELOPMENT
+- Young drivers across player line-ups, AI line-ups, academies and reserve programmes now gain rating gradually as race weekends progress.
+- Progress is capped by a stored potential rating and slows as drivers approach age 25; drivers aged 30+ stop receiving automatic growth.
+- Academy/reserve development records starts, points and rating progress.
+
+RETIREMENTS
+- Career retirement events now store the retirement year and constructor.
+- Hall of Fame includes a Driver Retirements table showing driver, team, retirement year, titles and wins.
+
+VERSIONING
+- package.json remains at SemVer-compatible 0.9.9 for Electron Builder. The in-game build label is 0.9.9.5.
+
+QA
+- Existing circuit map, pre-1.0, Team Creator, technical supplier and contract extension QA suites pass.
+- New 0.9.9.5 regression suite: 10 checks passed.
+- JavaScript syntax checks passed for app.js, pre10-overhaul.js and gpm-064.js.

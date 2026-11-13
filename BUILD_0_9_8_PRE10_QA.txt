@@ -1,0 +1,19 @@
+GRAND PRIX MANAGER 0.9.8 — PRE-1.0 QA
+
+EXECUTED AND PASSED
+- Node syntax checks for all primary JavaScript files, including Electron main/preload and the new overhaul layer.
+- package.json parsed and reports version 0.9.8.
+- qa_pre10.js runtime tests passed for circuit lap counts, lap snapshot consistency, AI academy promotion, AI contract replacement, AI car development, and legacy placeholder migration.
+- Static assertions passed for contract expiry state, F1 market expansion, Hall of Fame cutoff, career season archive, management dock, live-race persistence, PWA cache inclusion, and Electron packaging inclusion.
+
+Static checks included:
+- JavaScript syntax checks for app.js, gpm-064.js, pre10-overhaul.js, save-migration.js and driver-career.js.
+
+Not verified in this environment:
+- Full interactive Windows/Electron playthrough.
+- Live save migration using the user's actual 2030 career.
+- Full AI market balance over multiple simulated seasons.
+- iOS/Android packaging or store builds.
+
+- Circuit map QA: every round in the 2022–2026 calendars resolves to a season-specific SVG layout ID; live-race, race-result, and archive screens use the same local asset path.
+- Build packaging runs download-circuit-maps.js before electron-builder and includes circuits/maps/**/*.svg in the Windows installer. Download execution is verified on the user build machine when "npm run dist" is run.

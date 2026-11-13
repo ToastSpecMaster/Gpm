@@ -1,0 +1,5 @@
+GRAND PRIX MANAGER 0.8.0 — REALISTIC CAREER & TECHNICAL SUPPLIERS
+
+Implemented: multi-season junior ladder, team applications and rejections, realistic rookie ratings and slower development, supplier selection and performance effects, feeder-series participation for academy/reserve drivers.
+
+Next candidates: richer contract negotiations, team-specific car development, academy budgets, junior race calendars and full feeder-series race classifications.

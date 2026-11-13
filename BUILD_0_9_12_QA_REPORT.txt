@@ -1,0 +1,21 @@
+GRAND PRIX MANAGER 0.9.12 — QA REPORT
+
+SOURCE
+- Based on the user-supplied grand_prix_manager_0_9_9_7_ai_progression_grid_fix(1).zip archive.
+- Project version updated to 0.9.12 (valid SemVer).
+
+PASSED
+- JavaScript syntax checks: app.js, gpm-064.js, driver-career.js, pre10-overhaul.js, qa_0912.js.
+- npm run qa: all existing circuit, pre-1.0, team creator, driver market, technical supplier, contract extension, development, AI progression / off-season grid and new 0.9.12 checks passed.
+- Circuit calendar QA maps all 2022–2026 rounds to season-specific map paths and verifies the download manifest for 28 layouts.
+- Runtime progression QA verifies AI ratings change round-by-round and offseason transfers preserve a unique two-driver grid.
+- New source-level checks verify soundtrack control and synthesis, expanded supplier setup lists, component damage / replacement workflow, staff readiness gate and driver/team championship table.
+- Source ZIP integrity will be checked after packaging.
+
+NOT VERIFIED IN THIS ENVIRONMENT
+- Electron GUI launch and in-game visual / audio playback.
+- Windows NSIS installer generation. npm install did not finish within the available execution window, so no installer is claimed as built.
+- Official driver portrait photographs are not included in the supplied project and were not fabricated for this release.
+
+WINDOWS BUILD
+- On Windows with Node.js 20+ and internet access, run BUILD_WINDOWS.bat. It installs dependencies, runs QA, downloads the circuit SVG assets, and creates the NSIS installer in dist/.

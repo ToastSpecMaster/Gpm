@@ -1,0 +1,27 @@
+GRAND PRIX MANAGER 0.9.5 — DESKTOP PROJECT
+
+WHAT IS INCLUDED
+- Electron desktop shell. The app opens index.html directly in a native Windows window; it does not start localhost.
+- Windows NSIS installer configuration, desktop shortcut and Start Menu shortcut.
+- One-time BUILD_WINDOWS.bat build helper. This requires Node.js 20+ and internet access to download Electron/build dependencies.
+- Existing 0.8.0 Team Principal and Driver Career modes and save formats are retained.
+- 2026 concept car livery shader: the included 2026 GLB has vertex colours but no UV coordinates, so the 2026 livery is applied procedurally to the 3D bodywork rather than relying on a UV paint texture. Team primary, secondary and accent colours drive the paint pattern.
+- The 2022–2025 model continues to use the existing custom canvas livery texture where its model supports it.
+
+BUILD THE WINDOWS INSTALLER
+1. Install Node.js 20 LTS or newer on the Windows PC.
+2. Extract this project folder.
+3. Double-click BUILD_WINDOWS.bat.
+4. When complete, find the installer in dist\Grand Prix Manager Setup 0.9.5.exe (exact filename may include the version).
+5. Run the installer and launch Grand Prix Manager from the desktop shortcut.
+
+RUNTIME NOTES
+- No Python, localhost server, or manually opened browser is needed to play after installation.
+- Three.js and Google Fonts are currently loaded from their CDNs, so the first 3D viewer launch and remote fonts need an internet connection. The rest of the game UI and local models are packaged with the app.
+- Career saves remain in the app's Chromium local storage profile.
+
+SCOPE
+This is the 0.9.5 desktop-app project. Actual circuit layouts, expanded sponsor roster, broader PU/gearbox catalogues, team-season-specific PU rules, custom engine creation, and year-by-year custom regulations are tracked for 0.9.5 and are not represented as completed in this build.
+
+VALIDATION LIMITATION
+Source-level checks and archive integrity can be performed here. A Windows installer must be built and launched on Windows with Node.js, Electron dependencies and a compatible graphics device; that full Windows/GPU test is not available in this environment.
