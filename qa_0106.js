@@ -15,7 +15,7 @@ assert(app.includes('&&!activeSeasonNames.has(name)'),'historical names who are 
 assert(gpm.includes('c.freeAgents=Array.isArray(c.freeAgents)?c.freeAgents:[]'),'released drivers must enter free agency, not the reserve pool');
 assert(gpm.includes('reputationDiscount'),'team reputation must influence contract negotiation');
 assert(gpm.includes('AI driver moves are now handled by the contract-window transfer model'),'unconditional random AI swaps must be removed');
-assert(gpm.includes('Never copy last season\'s AI line-ups over it'),'authored 2022–2026 grids and future contract-simulated grids must survive season advance');
+assert(gpm.includes('Never copy last season\'s AI line-ups over it'),'authored 2022â€“2026 grids and future contract-simulated grids must survive season advance');
 assert(gpm.includes('if(Number(c.season)>=2026){Object.entries(c.roster||{})'),'random retirements must not overwrite known historical grids before 2027');
 assert(patch.includes('function archiveCareerSeason0106(c)'),'season archive must replace stale same-year champion records');
 assert(patch.includes('window.openGpmHallOfFame=function()'),'Hall of Fame button must call the updated archive-aware entry point');
@@ -49,7 +49,8 @@ assert(!choices.includes('Sebastian Vettel'),'the contracted current F1 identity
 console.log('PASS Runtime market check: current Vettel stays contracted while Vettel (Prime) remains separately selectable.');
 // Runtime champion archive check: overwrite a stale 2023 archive entry with the actual final standings.
 const archiveStart=patch.indexOf('function archiveCareerSeason0106(c){');
-const archiveEnd=patch.indexOf('\n};\nwindow.archiveCareerSeason0106',archiveStart)+3;
+const archiveMarker=patch.indexOf('window.archiveCareerSeason0106',archiveStart);
+const archiveEnd=patch.lastIndexOf('};',archiveMarker)+2;
 assert(archiveStart>=0&&archiveEnd>archiveStart,'archive rebuild implementation must exist');
 const archiveSandbox={SEASONS:{2023:{rounds:22}},sortedEntries:o=>Object.entries(o||{}).map(([name,points])=>({name,points})).sort((a,b)=>b.points-a.points),saveCareer:()=>{}};
 vm.createContext(archiveSandbox);vm.runInContext(patch.slice(archiveStart,archiveEnd)+';this.archiveCareerSeason0106=archiveCareerSeason0106;',archiveSandbox);
